@@ -1,0 +1,28 @@
+.ap-footer {
+	.ap-ft {
+		&-area {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1.6em 1em;
+		}
+
+		&-logo {
+			max-width: 8em;
+			width: 100%;
+			display: block;
+			height: 2em;
+
+			.icon {
+				fill: #fff;
+			}
+		}
+	}
+
+	.ap-txt--link {
+		color: $fontBase;
+		text-decoration: underline;
+	}
+}

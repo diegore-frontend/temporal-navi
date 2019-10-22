@@ -1,0 +1,27 @@
+// Navidad Cinépolis 2019
+// Gulp 4 included :: Gulp render console: Gulp
+
+@import "node_modules/rupture-sass/rupture";
+@import "./components/cmps.settings";
+
+body {
+	color: #222;
+	font-family: $baseFont;
+}
+
+// Tools
+@import "./components/cmps.normalizer";
+
+// Layout
+@import "./layout/layout";
+@import "./layout/buttons";
+@import "./layout/footer";
+@import "./layout/modal";
+
+// Pages
+@import "./pages/ui-settings";
+@import "./pages/opa-intro";
+@import "./pages/opa-terms";
+
+// Delightfull
+@import "./layout/delightfull";

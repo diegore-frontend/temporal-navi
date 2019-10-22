@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Navidad Cinépolis">
+    <meta name="author" content="IA Interactive">
+    <title>Navidad Cinépolis 2019</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800" rel="stylesheet" type="text/css">
+    <link href="/Content/css/master.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="ap ap--is-loading">
+    <main class="ap-main">
+      <header class="ap-ui-header">
+        <h2 class="ap-ttt">Ui Guide</h2>
+      </header>
+      <section class="ap-ui-settings">
+        <article class="ap-ui-area ap-ui-area--colors">
+          <h2 class="ap-ttt-ui">Colors</h2>
+          <div class="ap-flx">
+            <div class="ap-elm-color"><span class="color palette-base"></span>
+              <p class="ap-txt">$base</p>
+            </div>
+            <div class="ap-elm-color"><span class="color palette-baseDrk"></span>
+              <p class="ap-txt">$baseDrk</p>
+            </div>
+            <div class="ap-elm-color"><span class="color palette-green"></span>
+              <p class="ap-txt">$green</p>
+            </div>
+            <div class="ap-elm-color"><span class="color palette-greenDrk"></span>
+              <p class="ap-txt">$greenDrk</p>
+            </div>
+            <div class="ap-elm-color"><span class="color palette-fontBase"></span>
+              <p class="ap-txt">$fontBase</p>
+            </div>
+            <div class="ap-elm-color"><span class="color palette-fontSubase"></span>
+              <p class="ap-txt">$fontSubase</p>
+            </div>
+          </div>
+        </article>
+        <article class="ap-ui-area ap-ui-area--textStyles">
+          <h2 class="ap-ttt-ui">Text Styles</h2>
+          <h1 class="ap-t">Título Principal</h1>
+          <h2 class="ap-tt">Subtítlo Principal</h2>
+          <h3 class="ap-ttt">Tercer título</h3>
+          <p class="ap-txt">Lorem ipsum dolor sit amet numquam iste assumenda ex pariatur illum nesciunt nam ad adipisci vel totam odit?</p>
+          <p class="ap-txt">Gerry is such a <strong class="ap-txt--strong">nice Guy.</strong></p>
+          <p class="ap-txt">Gerry is such a <strong class="ap-txt--link">nice Guy.</strong> Here is his web site:<a class="ap-txt--link" href="#"> gerry.com</a></p>
+        </article>
+        <article class="ap-ui-area ap-ui-area--buttons">
+          <h2 class="ap-ttt-ui">Buttons</h2>
+          <nav><a class="ap-btn" href="">Button</a><a class="ap-btn ap-btn--hover" href="">Button</a><a class="ap-btn ap-btn--pressed" href="">Button</a></nav>
+        </article>
+        <article class="ap-ui-area ap-ui-area--svg">
+          <h2 class="ap-ttt-ui">SVG icons</h2>
+          <svg class="icon">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#icon-twiter"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#lg-cinepolis"></use>
+          </svg>
+        </article>
+        <article class="ap-ui-area ap-ui-area--textFooter">
+          <h2 class="ap-ttt-ui">footer</h2>
+          <footer class="ap-footer">
+            <div class="ap-ft-area"><a class="ap-txt--link" href="">Bases y condiciones.</a><a class="ap-ft-logo" href="">
+                <svg class="icon">
+                  <use xlink:href="#lg-cinepolis"></use>
+                </svg></a><a class="ap-txt--link" href="">Aviso de privacidad</a></div>
+          </footer>
+        </article>
+      </section>
+    </main>
+    <!-- Modal Boxes-->
+    <article class="ap-overlay ap-modal--loading ap-modal--is-visible" id="ap-modal--loading">
+      <div class="ap-modal-flx">
+        <div class="ap-modal-wrapp">
+          <div class="ap-overlay-area">
+            <div class="ap-modal">
+              <p>Global Loading</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="ap-overlay ap-modal--loading-game" id="ap-modal--loading-game">
+      <div class="ap-modal-flx">
+        <div class="ap-modal-wrapp"><a class="ap-btn ap-modal-close ap-btn-close" href="#">
+            <svg class="icon">
+              <use xlink:href="#icon-close"></use>
+            </svg></a>
+          <div class="ap-overlay-area">
+            <div class="ap-modal">
+              <p>Global Loading</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="ap-overlay ap-modal--login" id="ap-modal--login">
+      <div class="ap-modal-flx">
+        <div class="ap-modal-wrapp"><a class="ap-btn ap-modal-close ap-btn-close" href="#">
+            <svg class="icon">
+              <use xlink:href="#icon-close"></use>
+            </svg></a>
+          <div class="ap-overlay-area">
+            <div class="ap-modal">
+              <p>Login</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="ap-overlay ap-modal--login-error" id="ap-modal--login-error">
+      <div class="ap-modal-flx">
+        <div class="ap-modal-wrapp"><a class="ap-btn ap-modal-close ap-btn-close" href="#">
+            <svg class="icon">
+              <use xlink:href="#icon-close"></use>
+            </svg></a>
+          <div class="ap-overlay-area">
+            <div class="ap-modal">
+              <p>Login error</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="ap-overlay ap-modal--landscape" id="ap-modal--landscape">
+      <div class="ap-modal-flx">
+        <div class="ap-modal-wrapp">
+          <p>Landscape</p>
+        </div>
+      </div>
+    </article>
+    <!-- SVG--><svg width="0" height="0" class="hidden"> <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="icon-facebook"> <path d="M29.7 16.1c0-7.6-6.1-13.7-13.7-13.7S2.3 8.5 2.3 16.1c0 6.9 5 12.5 11.5 13.6v-9.6h-3.5v-4h3.5v-3c0-3.4 2-5.3 5.2-5.3 1.5 0 3.1.3 3.1.3v3.4h-1.7c-1.7 0-2.2 1.1-2.2 2.1v2.6H22l-.6 4h-3.2v9.6c6.5-1.2 11.5-6.9 11.5-13.7"></path> <defs> <filter id="a" filterUnits="userSpaceOnUse" x="-5.4" y="-5.4" width="42.9" height="42.9"> <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix> </filter> </defs> <mask maskUnits="userSpaceOnUse" x="-5.4" y="-5.4" width="42.9" height="42.9" id="b"> <path d="M29.7 16.1c0-7.6-6.1-13.7-13.7-13.7S2.3 8.5 2.3 16.1c0 6.9 5 12.5 11.5 13.6v-9.6h-3.5v-4h3.5v-3c0-3.4 2-5.3 5.2-5.3 1.5 0 3.1.3 3.1.3v3.4h-1.7c-1.7 0-2.2 1.1-2.2 2.1v2.6H22l-.6 4h-3.2v9.6c6.5-1.2 11.5-6.9 11.5-13.7" fill-rule="evenodd" clip-rule="evenodd" filter="url(#a)"></path> </mask> <g mask="url(#b)"> <path d="M-5.476-5.476h42.9v42.9h-42.9z"></path> </g> </symbol> <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="icon-twiter"> <g transform="translate(216 31.688)"> <path d="M-186.4-24.5c-1 .5-2.1.8-3.3.9 1.2-.7 2.1-1.9 2.5-3.2-1.1.7-2.3 1.1-3.6 1.4-1-1.1-2.5-1.8-4.2-1.8-3.2 0-5.7 2.6-5.7 5.8 0 .5.1.9.1 1.3-4.8-.2-9-2.6-11.8-6.1-.5.9-.8 1.9-.8 2.9 0 2 1 3.8 2.6 4.8-.9 0-1.8-.3-2.6-.7v.1c0 2.8 2 5.2 4.6 5.7-.5.1-1 .2-1.5.2-.4 0-.7 0-1.1-.1.7 2.3 2.9 4 5.4 4-2 1.6-4.4 2.5-7.1 2.5-.5 0-.9 0-1.4-.1 2.5 1.6 5.6 2.6 8.8 2.6 10.6 0 16.3-8.8 16.3-16.5v-.8c1.1-.7 2.1-1.7 2.8-2.9"></path> <defs> <filter id="a" filterUnits="userSpaceOnUse" x="-222.8" y="-38.1" width="44.8" height="44.8"> <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix> </filter> </defs> <mask maskUnits="userSpaceOnUse" x="-222.8" y="-38.1" width="44.8" height="44.8" id="b"> <path d="M-186.4-24.5c-1 .5-2.1.8-3.3.9 1.2-.7 2.1-1.9 2.5-3.2-1.1.7-2.3 1.1-3.6 1.4-1-1.1-2.5-1.8-4.2-1.8-3.2 0-5.7 2.6-5.7 5.8 0 .5.1.9.1 1.3-4.8-.2-9-2.6-11.8-6.1-.5.9-.8 1.9-.8 2.9 0 2 1 3.8 2.6 4.8-.9 0-1.8-.3-2.6-.7v.1c0 2.8 2 5.2 4.6 5.7-.5.1-1 .2-1.5.2-.4 0-.7 0-1.1-.1.7 2.3 2.9 4 5.4 4-2 1.6-4.4 2.5-7.1 2.5-.5 0-.9 0-1.4-.1 2.5 1.6 5.6 2.6 8.8 2.6 10.6 0 16.3-8.8 16.3-16.5v-.8c1.1-.7 2.1-1.7 2.8-2.9"fill-rule="evenodd" clip-rule="evenodd" filter="url(#a)"></path> </mask> <g mask="url(#b)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M-222.775-38.087h44.8v44.8h-44.8z"></path> </g> </g> </symbol> <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 713 158" id="lg-cinepolis"> <path d="M45.8 106c-10.8 0-19.7-7.7-21.7-17.9L0 92.8c4.1 21.5 23.1 37.7 45.8 37.7 13 0 24.7-5.3 33.2-13.8l-19.8-15.2c-3.7 2.8-8.3 4.5-13.4 4.5zm0-44.2c5 0 9.7 1.7 13.4 4.5L79 51.2c-8.5-8.5-20.2-13.8-33.2-13.8C23.1 37.4 4.1 53.6 0 75.1l24.1 4.7c1.9-10.2 10.9-18 21.7-18zm332.7 47.5c-12.3 0-21.2-8.9-22.6-22v-6.9c1.4-12.9 10.4-21.9 22.6-21.9 14 0 23.8 10.5 23.8 25.3 0 15-9.8 25.5-23.8 25.5zm7.2-71.9c-12.4 0-22.8 5.3-29.9 14.5V39.4h-25.2V158h25.2v-42.2c7.1 9.3 17.4 14.6 29.9 14.6 23.8 0 41.1-19.3 41.1-46.6 0-27.2-17.3-46.4-41.1-46.4zm100 71.9c-13.5 0-24.7-11.7-24.7-25.5s11.2-25.3 24.7-25.3c13.3 0 24.5 11.5 24.5 25.3s-11.2 25.5-24.5 25.5zm0-71.9c-26.6 0-48.8 21.2-48.8 46.5s22.3 46.6 48.8 46.6c26.4 0 48.5-21.3 48.5-46.6 0-25.4-22.1-46.5-48.5-46.5zm60.4 91h25.2V8.1h-25.2v120.3zM667 73.2c-12.1-3.3-15.7-4.6-15.7-9.5 0-3.1 4.3-5.3 10.5-5.3 7.6 0 16.9 2.9 25 7.9L697 48.4c-9.8-6.5-22.4-11-35.2-11-21.1 0-35 12-34.9 28.9.2 17.6 14.3 22.5 32.6 27 9.1 2.4 15.7 4.1 15.7 9.6 0 4-4.8 6.7-11.6 6.7-11.9 0-21.9-4.3-29.9-10L623 117c10.7 8.6 25.9 13.4 40.2 13.4 21.9 0 36.2-11.2 36.2-28.7.1-19.4-17-24.6-32.4-28.5zm-79.2 55.2H613v-89h-25.2v89zM600.6 0c-7.8 0-13.8 6.4-13.8 13.4 0 7.6 6 13.8 13.8 13.8 7.4 0 13.5-6.2 13.5-13.8 0-7-6.1-13.4-13.5-13.4zM296 8.2h-25.2l-9.4 19.1h25.2L296 8.2zM254.8 74c3.3-8.9 11.2-14.5 20.7-14.5 10.2 0 16.7 5.7 19.2 14.5h-39.9zm19.7-36.6c-26.1 0-45.9 19.5-45.9 46.3 0 27.4 20.7 46.8 47.3 46.8 13.1 0 28.5-5.5 36.4-13.8l-16.1-16.4c-4.8 4.6-13.5 7.9-20.5 7.9-10.5 0-18.3-6.5-21.2-16.2h64.4c-.1-33.5-16.5-54.6-44.4-54.6zm-90.1 0c-11.6 0-21.6 5.1-26.9 13.2V39.4h-25.2v89h25.2V75.7c0-9.6 8.3-17.2 18.8-17.2 10 0 16.9 7.6 16.9 18.6v51.3h24.3V71.8c0-20.2-13.8-34.4-33.1-34.4zM101.8 0C94.1 0 88 6.4 88 13.4c0 7.6 6 13.8 13.8 13.8 7.4 0 13.5-6.2 13.5-13.8 0-7-6-13.4-13.5-13.4zM707 118.3c3.4 0 6 2.6 6 5.9 0 3.3-2.6 5.9-6 5.9s-6.1-2.6-6.1-5.9c0-3.3 2.7-5.9 6.1-5.9zm0 1.1c-2.6 0-4.5 2.1-4.5 4.7s1.9 4.7 4.6 4.7c2.6 0 4.5-2.1 4.5-4.6-.1-2.7-2-4.8-4.6-4.8zm-592.7-80v89H89.1v-89h25.2zm592.6 81.7c1.1 0 1.6.2 2 .4.3.3.6.7.6 1.3 0 .6-.5 1.1-1.2 1.4v.1c.6.2.9.6 1.1 1.4.2.9.3 1.3.4 1.5h-1.5c-.2-.2-.3-.7-.5-1.4-.1-.6-.5-.9-1.2-.9h-.6v2.4h-1.4v-5.9c.6-.2 1.4-.3 2.3-.3zm-.1 1c-.4 0-.6 0-.8.1v1.7h.6c.8 0 1.4-.3 1.4-.9.1-.5-.3-.9-1.2-.9z"fill-rule="evenodd" clip-rule="evenodd"></path> </symbol> <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" id="icon-close"> <path d="M19 1C9.1 1 1 9.1 1 19s8.1 18 18 18 18-8.1 18-18S28.9 1 19 1zm0 35.2C9.5 36.2 1.8 28.5 1.8 19S9.5 1.8 19 1.8 36.2 9.5 36.2 19 28.5 36.2 19 36.2z"></path> <path d="M25.9 12.1c-.4-.4-1-.4-1.4 0L19 17.6 13.4 12c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.6 5.6-5.6 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l5.6-5.6 5.6 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4L20.4 19l5.6-5.6c.3-.3.3-1-.1-1.3z"></path> </symbol></svg>
+    <script src="/Content/scripts/jquery-3.3.1.min.js"></script>
+    <script src="/Content/scripts/vendors.min.js"></script>
+    <script src="/Content/scripts/actions.js"></script>
+  </body>
+</html>

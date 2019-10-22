@@ -1,0 +1,48 @@
+.ap {
+	&-overlay {
+		background-color: rgba(#000, 1);
+		display: none;
+		color: #fff;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		left: 0;
+		z-index: 999999;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+
+		.ap-btn-close {
+			color: #fff;
+			font-size: 1.2em;
+			height: 2.6em;
+			line-height: 1.5em;
+			position: absolute;
+			right: 1em;
+			text-align: center;
+			top: 1em;
+			transition: 0.3s all;
+			width: 2.6em;
+			padding: 0.6em;
+
+			.icon {
+				fill: #fff;
+			}
+		}
+	}
+
+	&-modal {
+		&-flx {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			padding: 1em;
+		}
+		// Show
+		&--is-visible {
+			display: block;
+		}
+	}
+}

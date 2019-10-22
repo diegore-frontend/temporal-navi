@@ -1,0 +1,22 @@
+doctype html
+html(lang="es-MX")
+	include _head
+
+	body.ap.ap--is-loading
+		main.ap-main
+			block content
+
+		// Modal Boxes
+		include ../partials/part.modals/modal-box--loading-global
+		include ../partials/part.modals/modal-box--loading-game
+		include ../partials/part.modals/modal-box--login
+		include ../partials/part.modals/modal-box--login-error
+		include ../partials/part.modals/modal-box--landscape
+
+		// SVG
+		include ../partials/part.master/part.svg.pug
+
+		block scripts
+			script(src="/Content/scripts/jquery-3.3.1.min.js")
+			script(src="/Content/scripts/vendors.min.js")
+			script(src="/Content/scripts/actions.js")

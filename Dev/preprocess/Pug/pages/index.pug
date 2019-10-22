@@ -1,0 +1,21 @@
+extend ../layout/_layout
+
+block content
+	section.ap-onepage
+		section.ap-op.ap-op--intro
+			// Intro
+			include ../partials/part.onepage/intro
+
+		section.ap-op.ap-transition-land
+			img(src="/Content/img/subground.svg", alt="Jumanji")
+
+		section.ap-op.ap-op--others#ap-others
+			// Other Games & Sponsors
+			include ../partials/part.onepage/others
+
+		section.ap-op.ap-op--terms
+			// Terms
+			include ../partials/part.onepage/terms
+
+		//- Footer
+		include ../partials/part.master/part.footer.pug

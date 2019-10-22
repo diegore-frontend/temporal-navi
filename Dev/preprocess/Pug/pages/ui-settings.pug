@@ -1,0 +1,69 @@
+extend ../layout/_layout
+
+block content
+	header.ap-ui-header
+		h2.ap-ttt Ui Guide
+
+	section.ap-ui-settings
+		article.ap-ui-area.ap-ui-area--colors
+			h2.ap-ttt-ui Colors
+
+			div.ap-flx
+				.ap-elm-color
+					span.color.palette-base
+					p.ap-txt $base
+				.ap-elm-color
+					span.color.palette-baseDrk
+					p.ap-txt $baseDrk
+				.ap-elm-color
+					span.color.palette-green
+					p.ap-txt $green
+				.ap-elm-color
+					span.color.palette-greenDrk
+					p.ap-txt $greenDrk
+				.ap-elm-color
+					span.color.palette-fontBase
+					p.ap-txt $fontBase
+				.ap-elm-color
+					span.color.palette-fontSubase
+					p.ap-txt $fontSubase
+
+		article.ap-ui-area.ap-ui-area--textStyles
+			h2.ap-ttt-ui Text Styles
+
+			h1.ap-t Título Principal
+			h2.ap-tt Subtítlo Principal
+			h3.ap-ttt Tercer título
+
+			p.ap-txt Lorem ipsum dolor sit amet numquam iste assumenda ex pariatur illum nesciunt nam ad adipisci vel totam odit?
+			p.ap-txt Gerry is such a #[strong.ap-txt--strong nice Guy.]
+			p.ap-txt Gerry is such a #[strong.ap-txt--link nice Guy.] Here is his web site:
+				a.ap-txt--link(href="#")  gerry.com
+
+		article.ap-ui-area.ap-ui-area--buttons
+			h2.ap-ttt-ui Buttons
+			nav
+				a.ap-btn(href="") Button
+				a.ap-btn.ap-btn--hover(href="") Button
+				a.ap-btn.ap-btn--pressed(href="") Button
+
+		article.ap-ui-area.ap-ui-area--svg
+				h2.ap-ttt-ui SVG icons
+
+				svg.icon
+					use(xlink:href="#icon-close")
+
+				svg.icon
+					use(xlink:href="#icon-facebook")
+
+				svg.icon
+					use(xlink:href="#icon-twiter")
+
+				svg.icon
+					use(xlink:href="#lg-cinepolis")
+
+
+		article.ap-ui-area.ap-ui-area--textFooter
+			h2.ap-ttt-ui footer
+			//- Footer
+			include ../partials/part.master/part.footer.pug

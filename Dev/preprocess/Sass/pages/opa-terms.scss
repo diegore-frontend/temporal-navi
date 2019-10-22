@@ -1,0 +1,12 @@
+.ap {
+	&-terms {
+		.ap-scroll {
+			max-height: 32em;
+
+			@include above(760px) {
+				min-height: 28em;
+				max-height: 32em;
+			}
+		}
+	}
+}
