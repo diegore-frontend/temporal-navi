@@ -1,5 +1,8 @@
 var $wW = $(window).width(),
 	$modLink = $(".ap-mod"),
+	$mClose = $(".ap-modal-close"),
+	$mCloseBtn = $('.ap-mod-close'),
+	$siteData = '',
 	$termsData;
 
 function terms(termsUrl) {
@@ -95,8 +98,150 @@ function hashur() {
 	});
 }
 
+function modalBoix() {
+	$modLink.on('click', function (e) {
+		e.preventDefault();
+
+		var $link = $(this).attr('href'),
+				$el = $($link),
+				$vis = $('.ap-modal--is-visible');
+
+		$vis.removeClass('ap-modal--is-visible');
+
+		$el.fadeIn(function () {
+			$el.addClass('ap-modal--is-visible');
+		});
+	});
+
+	$mClose.on('click', function (e) {
+		e.preventDefault();
+		closemodal.call(this);
+	});
+
+	$mCloseBtn.on('click', function (e) {
+		e.preventDefault();
+		closeEsc();
+	});
+
+	$(document).keyup(function (e) {
+		if (e.keyCode == 27) {
+			e.preventDefault();
+			closeEsc();
+		}
+	});
+
+	function closemodal() {
+		var $la = $(this),
+				$elm = $la.closest('.ap-overlay');
+
+		$elm.fadeOut(function(){
+			$elm.removeClass('ap-modal--is-visible').removeAttr('style');
+		});
+	}
+
+	function closeEsc() {
+		$('.ap-overlay').fadeOut(function () {
+			$(this).removeClass('ap-modal--is-visible').removeAttr('style');
+		});
+	}
+}
+
+function modalCall(modalId) {
+	var $link = $(modalId),
+			$el = $($link),
+			$vis = $('.ap-modal--is-visible');
+
+	console.log(modalId);
+
+	$vis.removeClass('ap-modal--is-visible');
+
+	$el.fadeIn(function () {
+		$el.addClass('ap-modal--is-visible');
+	});
+}
+
+function docData() {
+	$.ajax({
+		url: "../Content/data/site-data.json",
+		method: "GET",
+		dataType: 'json',
+		success: function(data) {
+			useReturnData(data);
+			loadDoc();
+		},
+		error: function(){
+			console.log('Something is wrong men.')
+		}
+	});
+}
+
+function useReturnData(data){
+	$siteData = data;
+
+	gamifiying(data, $day, $error);
+};
+
+
+function gamifiying(data, $day, $error) {
+	var $globalDay = $day,
+			$canPlay = $error;
+
+	dayEqualstoGame();
+
+	var $DAYPINEANIMATION = 'runAnimationDay'+$day+'';
+	var $RUNSETTINGSFORGAMEDAY = 'runGame'+$gameSts+'';
+
+	console.log(
+		'Current game day is:'+$globalDay+'.',
+		' Session is '+$canPlay+' for play.');
+
+	var $animationDays = {
+		runAnimationDay1: function(){
+			console.log('Pine Animation for day One')
+		},
+		runAnimationDay2: function(){
+			console.log('Pine Animation for day two')
+		}
+	};
+
+	var $gameSttings = {
+		runGameAhorcado: function(){
+			console.log('Ahorcado game settings')
+		},
+		runGameTrivia: function(){
+			console.log('Trivia game settings')
+		},
+		runGameRompecabezas: function(){
+			console.log('Rompe Cabezas game settings')
+		}
+	};
+
+	function dayEqualstoGame() {
+
+		if ($day === 1 || $day === 3 || $day === 14) {
+			// Game Rompecabezas
+			$gameSts = 'Rompecabezas';
+			return $gameSts
+		} else if($day === 2 || $day === 4 || $day === 6) {
+			// Game Trivia
+			$gameSts = 'Trivia';
+			return $gameSts
+		}
+	}
+
+	$animationDays[$DAYPINEANIMATION]();
+	$gameSttings[$RUNSETTINGSFORGAMEDAY]();
+}
+
+
 $(function() {
+	docData();
 	terms("../html/page.terms.html");
-	loadDoc();
 	hashur();
+	modalBoix();
+
+	$('.link').on('click', function(e){
+		e.preventDefault();
+		modalCall("#ap-modal--login-error");
+	})
 });

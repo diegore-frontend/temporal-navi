@@ -1,0 +1,12 @@
+$path: '../fonts/';
+
+@font-face {
+	font-family: 'chewy';
+	src: url($path + 'chewy-regular.eot');
+	src: url($path + 'chewy-regular.eot?#iefix') format('embedded-opentype'),
+		url($path + 'chewy-regular.woff') format('woff'),
+		url($path + 'chewy-regular.ttf') format('truetype'),
+		url($path + 'chewy-regular.svg#chewy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

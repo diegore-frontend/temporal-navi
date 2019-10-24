@@ -1,5 +1,6 @@
 .ap-btn {
-	background-color: $base;
+	@include gradient(left, $btnGrad);
+	font-family: $secondFont;
 	color: #fff;
 	width: 100%;
 	max-width: 10em;
@@ -8,6 +9,11 @@
 	padding: 0.7em;
 	border-radius: 14em;
 	font-weight: 700;
-	box-shadow: 0em 0.5em $baseDrk;
 	text-shadow: 0em 0em 0.4em rgba(0, 0, 0, 0.4);
+	font-size: 1.8em;
+	text-transform: uppercase;
+	padding: 0.2em;
+	box-shadow: 0em 0.2em $baseDrk;
+	letter-spacing: 1px;
 }
+

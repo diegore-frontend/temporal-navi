@@ -1,5 +1,6 @@
 // Colors
-$base: #ff5155;
+$base: #f85155;
+$baseLgt: #ff6763;
 $baseDrk: #44171d;
 $green: #00cf77;
 $greenDrk: #003519;
@@ -7,5 +8,14 @@ $fontBase: #707070;
 $fontSubase: #2a2a2a;
 
 // Fonts
-$baseFont: "Montserrat", sans-serif;
-$secondFont: "Lato", sans-serif;
+$baseFont: "Lato", sans-serif;
+$secondFont: "chewy", sans-serif;
+
+$btnGrad: $base, $baseLgt;
+
+@mixin gradient($direction, $list) {
+	background: -webkit-linear-gradient($direction, $list);
+	background: -moz-linear-gradient($direction, $list);
+	background: -o-linear-gradient($direction, $list);
+	background: linear-gradient($direction, $list);
+}

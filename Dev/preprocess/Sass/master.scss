@@ -3,10 +3,13 @@
 
 @import "node_modules/rupture-sass/rupture";
 @import "./components/cmps.settings";
+@import "./components/cmps.fonts";
 
 body {
 	color: #222;
 	font-family: $baseFont;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 // Tools
