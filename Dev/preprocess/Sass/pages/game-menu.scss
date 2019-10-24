@@ -1,0 +1,41 @@
+.ap {
+	&-game {
+		&-menu {
+			width: 100%;
+			position: relative;
+			height: calc(100vh - 3.5em);
+
+			@include above(760px) {
+				height: calc(100vh - 6.4em);
+			}
+
+			@include above(760px) {
+				height: calc(100vh - 5.2em);
+			}
+
+			.ap-stands-svg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				overflow: hidden;
+			}
+
+			#game-selection {
+				width: 30em;
+				height: 12.4em;
+				font-size: 4em;
+				top: 50%;
+				left: 50%;
+				margin-left: -15.09em;
+				margin-top: -5.1em;
+				position: absolute;
+
+				@include above(760px) {
+					font-size: 5.2em;
+				}
+			}
+		}
+	}
+}

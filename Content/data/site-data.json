@@ -5,6 +5,13 @@
 			"btnTxt": "Entra"
 		}
 	],
-
-	"choseGameInfo": "ZONA VIP"
+	"loginModalInfo": [
+		{
+			"title": "Inicia Sesión",
+			"info": "Ayuda a Duendepolito a decorar nuestro árbol de Navidad.",
+			"errorTitle": "¡Oh oh!",
+			"errorInfo": "Al parecer haz entrado a otro almacén.",
+			"errorBtn": "Inténtalo de nuevo"
+		}
+	]
 }

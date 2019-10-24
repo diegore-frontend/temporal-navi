@@ -1,8 +1,10 @@
 var $wW = $(window).width(),
 	$modLink = $(".ap-mod"),
 	$mClose = $(".ap-modal-close"),
-	$mCloseBtn = $('.ap-mod-close'),
-	$siteData = '',
+	$mCloseBtn = $(".ap-mod-close"),
+	$siteData = "",
+	$id = "",
+	$ea = "",
 	$termsData;
 
 function terms(termsUrl) {
@@ -99,31 +101,31 @@ function hashur() {
 }
 
 function modalBoix() {
-	$modLink.on('click', function (e) {
+	$modLink.on("click", function(e) {
 		e.preventDefault();
 
-		var $link = $(this).attr('href'),
-				$el = $($link),
-				$vis = $('.ap-modal--is-visible');
+		var $link = $(this).attr("href"),
+			$el = $($link),
+			$vis = $(".ap-modal--is-visible");
 
-		$vis.removeClass('ap-modal--is-visible');
+		$vis.removeClass("ap-modal--is-visible");
 
-		$el.fadeIn(function () {
-			$el.addClass('ap-modal--is-visible');
+		$el.fadeIn(function() {
+			$el.addClass("ap-modal--is-visible");
 		});
 	});
 
-	$mClose.on('click', function (e) {
+	$mClose.on("click", function(e) {
 		e.preventDefault();
 		closemodal.call(this);
 	});
 
-	$mCloseBtn.on('click', function (e) {
+	$mCloseBtn.on("click", function(e) {
 		e.preventDefault();
 		closeEsc();
 	});
 
-	$(document).keyup(function (e) {
+	$(document).keyup(function(e) {
 		if (e.keyCode == 27) {
 			e.preventDefault();
 			closeEsc();
@@ -132,31 +134,36 @@ function modalBoix() {
 
 	function closemodal() {
 		var $la = $(this),
-				$elm = $la.closest('.ap-overlay');
+			$elm = $la.closest(".ap-overlay");
 
-		$elm.fadeOut(function(){
-			$elm.removeClass('ap-modal--is-visible').removeAttr('style');
+		$elm.fadeOut(function() {
+			$elm.removeClass("ap-modal--is-visible").removeAttr("style");
 		});
 	}
 
 	function closeEsc() {
-		$('.ap-overlay').fadeOut(function () {
-			$(this).removeClass('ap-modal--is-visible').removeAttr('style');
+		$(".ap-overlay").fadeOut(function() {
+			$(this)
+				.removeClass("ap-modal--is-visible")
+				.removeAttr("style");
 		});
+	}
+}
+
+function isGame() {
+	if ($(".ap-game").length) {
+		$("body").addClass("ap--is-game");
 	}
 }
 
 function modalCall(modalId) {
 	var $link = $(modalId),
-			$el = $($link),
-			$vis = $('.ap-modal--is-visible');
+		$el = $($link),
+		$vis = $(".ap-modal");
+	$vis.removeClass(".ap-modal--is-visible");
 
-	console.log(modalId);
-
-	$vis.removeClass('ap-modal--is-visible');
-
-	$el.fadeIn(function () {
-		$el.addClass('ap-modal--is-visible');
+	$el.fadeIn(function() {
+		$el.addClass("ap-modal--is-visible");
 	});
 }
 
@@ -164,68 +171,68 @@ function docData() {
 	$.ajax({
 		url: "../Content/data/site-data.json",
 		method: "GET",
-		dataType: 'json',
+		dataType: "json",
 		success: function(data) {
 			useReturnData(data);
 			loadDoc();
 		},
-		error: function(){
-			console.log('Something is wrong men.')
+		error: function() {
+			console.log("Something is wrong men.");
 		}
 	});
 }
 
-function useReturnData(data){
+function useReturnData(data) {
 	$siteData = data;
 
-	gamifiying(data, $day, $error);
-};
+	gamifiying();
+	fillData(data);
+}
 
-
-function gamifiying(data, $day, $error) {
+function gamifiying() {
 	var $globalDay = $day,
-			$canPlay = $error;
+		$canPlay = $error;
 
 	dayEqualstoGame();
 
-	var $DAYPINEANIMATION = 'runAnimationDay'+$day+'';
-	var $RUNSETTINGSFORGAMEDAY = 'runGame'+$gameSts+'';
+	var $DAYPINEANIMATION = "runAnimationDay" + $day + "";
+	var $RUNSETTINGSFORGAMEDAY = "runGame" + $gameSts + "";
 
 	console.log(
-		'Current game day is:'+$globalDay+'.',
-		' Session is '+$canPlay+' for play.');
+		"Current game day is:" + $globalDay + ".",
+		" Session is " + $canPlay + " for play."
+	);
 
 	var $animationDays = {
-		runAnimationDay1: function(){
-			console.log('Pine Animation for day One')
+		runAnimationDay1: function() {
+			console.log("Pine Animation for day One");
 		},
-		runAnimationDay2: function(){
-			console.log('Pine Animation for day two')
+		runAnimationDay2: function() {
+			console.log("Pine Animation for day two");
 		}
 	};
 
 	var $gameSttings = {
-		runGameAhorcado: function(){
-			console.log('Ahorcado game settings')
+		runGameAhorcado: function() {
+			console.log("Ahorcado game settings");
 		},
-		runGameTrivia: function(){
-			console.log('Trivia game settings')
+		runGameTrivia: function() {
+			console.log("Trivia game settings");
 		},
-		runGameRompecabezas: function(){
-			console.log('Rompe Cabezas game settings')
+		runGameRompecabezas: function() {
+			console.log("Rompe Cabezas game settings");
 		}
 	};
 
 	function dayEqualstoGame() {
-
 		if ($day === 1 || $day === 3 || $day === 14) {
 			// Game Rompecabezas
-			$gameSts = 'Rompecabezas';
-			return $gameSts
-		} else if($day === 2 || $day === 4 || $day === 6) {
+			$gameSts = "Rompecabezas";
+			return $gameSts;
+		} else if ($day === 2 || $day === 4 || $day === 6) {
 			// Game Trivia
-			$gameSts = 'Trivia';
-			return $gameSts
+			$gameSts = "Trivia";
+			return $gameSts;
 		}
 	}
 
@@ -233,15 +240,48 @@ function gamifiying(data, $day, $error) {
 	$gameSttings[$RUNSETTINGSFORGAMEDAY]();
 }
 
+function fillData(data) {
+	$siteData = $(data);
+
+	$(".ap-btn-home").html($siteData[0].homeInfo[0].btnTxt);
+
+	// Modalboxes
+	$(".ap-login-day").html($day);
+	$(".ap-login-tt").html($siteData[0].loginModalInfo[0].title);
+	$(".ap-login-info").html($siteData[0].loginModalInfo[0].info);
+	$(".ap-login-error-tt").html($siteData[0].loginModalInfo[0].errorTitle);
+	$(".ap-login-error-info").html($siteData[0].loginModalInfo[0].errorInfo);
+	$(".ap-login-error-btn").html($siteData[0].loginModalInfo[0].errorBtn);
+}
+
+function countTT() {
+	var $tt = $(".listaCarteleraHorario h2"),
+		$ttLength = $tt.text().length,
+		$ttA = $(".listaCarteleraHorario a.btnInfoComplejo");
+
+	$.each($tt, function() {
+		if ($(this).text().length >= 30) {
+			$ttA.addClass("tt-colapsed");
+		}
+	});
+}
 
 $(function() {
+	isGame();
 	docData();
 	terms("../html/page.terms.html");
 	hashur();
 	modalBoix();
 
-	$('.link').on('click', function(e){
+	$(".link").on("click", function(e) {
 		e.preventDefault();
 		modalCall("#ap-modal--login-error");
-	})
+	});
+
+	$(".ap-login-wfacebook, .ap-login-wtwitter").on("click", function(e) {
+		if ($error === true) {
+			e.preventDefault();
+			modalCall("#ap-modal--login-error");
+		}
+	});
 });

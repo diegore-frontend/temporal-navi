@@ -250,4 +250,59 @@
 		position: relative;
 		overflow: hidden;
 	}
+	&-stands-svg {
+		#game-selection {
+			.st0 {
+				fill: #5f0015;
+			}
+			.st1 {
+				fill: #42210b;
+			}
+			.st2 {
+				fill: #603813;
+			}
+			.st3 {
+				fill: #ffff00;
+			}
+			.st4 {
+				fill: #ffffff;
+			}
+			.st5 {
+				fill: #00a99d;
+			}
+			.st6 {
+				fill: #0000ff;
+			}
+			.st7 {
+				fill: #8cc63f;
+			}
+			.st8 {
+				fill: #ff7bac;
+			}
+			.st9 {
+				fill: #22b573;
+			}
+			.st10 {
+				fill: #ff3f1f;
+			}
+			.st11 {
+				fill: #00dfdb;
+			}
+			.st12 {
+				fill: #492a0f;
+			}
+			.st13 {
+				fill: #39b54a;
+			}
+			.st14 {
+				fill: #006837;
+			}
+			.st15 {
+				fill: #c1272d;
+			}
+		}
+	}
+	&--is-game {
+		overflow: hidden;
+	}
 }

@@ -13,7 +13,7 @@
 		-webkit-overflow-scrolling: touch;
 
 		.ap-btn-close {
-			color: #fff;
+			color: $base;
 			font-size: 1.2em;
 			height: 2.6em;
 			line-height: 1.5em;
@@ -23,10 +23,12 @@
 			top: 1em;
 			transition: 0.3s all;
 			width: 2.6em;
-			padding: 0.6em;
+			background: none;
+			box-shadow: none;
+			padding: 0.2em;
 
 			.icon {
-				fill: #fff;
+				fill: $base;
 			}
 		}
 	}
@@ -43,6 +45,83 @@
 		// Show
 		&--is-visible {
 			display: block;
+		}
+
+		// &-login
+		&--login,
+		&--login-error {
+			.ap-modal {
+				text-align: center;
+				max-width: 34em;
+				width: 100%;
+
+				&-wrapp {
+					max-width: 24em;
+					width: 100%;
+				}
+			}
+			.ap-tt,
+			.ap-txt {
+				font-family: $secondFont;
+			}
+
+			.ap-tt {
+				&--day {
+					font-size: 2.8em;
+				}
+
+				&:nth-child(2) {
+					padding: 0.6em;
+				}
+			}
+
+			.ap-txt {
+				max-width: 10em;
+				margin: auto;
+				font-size: 1.4em;
+			}
+		}
+
+		&--login {
+			.ap-flx {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				padding: 1em;
+			}
+
+			.ap-modal-nav {
+				padding-top: 2em;
+
+				.ap-btn {
+					width: 7.4em;
+					font-size: 1em;
+					height: 7.4em;
+					padding: 1em;
+
+					.icon {
+						fill: #fff;
+					}
+
+					&:first-child {
+						margin-right: 1em;
+					}
+				}
+			}
+		}
+
+		&--login-error {
+			.ap-tt {
+				font-size: 2.8em;
+			}
+			.ap-modal-nav {
+				margin: 2em auto;
+			}
+			.ap-btn {
+				max-width: 8em;
+				margin: auto;
+				padding: 0.2em 1.5em;
+			}
 		}
 	}
 }
