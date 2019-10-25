@@ -13,5 +13,29 @@
 			"errorInfo": "Al parecer haz entrado a otro almacén.",
 			"errorBtn": "Inténtalo de nuevo"
 		}
+	],
+	"instructionsEncuentra": [
+		{
+			"common": "Instrucciones",
+			"title": "Encuentra el error",
+			"img": "<img src='/Content/img/55FC14BF0B007E29.jpg'>",
+			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a:</p> <p class='ap-txt'>Línea de abajo</p>"
+		}
+	],
+	"instructionsRompecabezas": [
+		{
+			"common": "Instrucciones",
+			"title": "Rompecabezas",
+			"img": "<img src='/Content/img/55FC14BF0B007E29.jpg'>",
+			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a:</p> <p class='ap-txt'>Línea de abajo</p>"
+		}
+	],
+	"instructionsTrivia": [
+		{
+			"common": "Instrucciones",
+			"title": "Trivia",
+			"img": "<img src='/Content/img/55FC14BF0B007E29.jpg'>",
+			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a:</p> <p class='ap-txt'>Línea de abajo</p>"
+		}
 	]
 }

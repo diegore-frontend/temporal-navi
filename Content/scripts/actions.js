@@ -185,12 +185,13 @@ function docData() {
 function useReturnData(data) {
 	$siteData = data;
 
-	gamifiying();
+	gamifiying(data);
 	fillData(data);
 }
 
-function gamifiying() {
+function gamifiying(data) {
 	var $globalDay = $day,
+		$siteData = $(data),
 		$canPlay = $error;
 
 	dayEqualstoGame();
@@ -205,7 +206,7 @@ function gamifiying() {
 
 	var $animationDays = {
 		runAnimationDay1: function() {
-			console.log("Pine Animation for day One");
+
 		},
 		runAnimationDay2: function() {
 			console.log("Pine Animation for day two");
@@ -213,14 +214,30 @@ function gamifiying() {
 	};
 
 	var $gameSttings = {
-		runGameAhorcado: function() {
+		runGameAhorcado: function(data) {
 			console.log("Ahorcado game settings");
+
+			gameType();
+			$(".ap-instructions-tt").html($siteData[0].instructionsRompecabezas[0].title);
+			$(".ap-instructions-ttt").html($siteData[0].instructionsRompecabezas[0].common);
+			$(".ap-instructions-info").html($siteData[0].instructionsRompecabezas[0].copy);
+			$(".ap-instructions-img").append($siteData[0].instructionsRompecabezas[0].img);
 		},
-		runGameTrivia: function() {
+		runGameTrivia: function(data) {
 			console.log("Trivia game settings");
+			gameType();
+			$(".ap-instructions-tt").html($siteData[0].instructionsTrivia[0].title);
+			$(".ap-instructions-ttt").html($siteData[0].instructionsTrivia[0].common);
+			$(".ap-instructions-info").html($siteData[0].instructionsTrivia[0].copy);
+			$(".ap-instructions-img").append($siteData[0].instructionsTrivia[0].img);
 		},
-		runGameRompecabezas: function() {
+		runGameRompecabezas: function(data) {
 			console.log("Rompe Cabezas game settings");
+			gameType();
+			$(".ap-instructions-tt").html($siteData[0].instructionsRompecabezas[0].title);
+			$(".ap-instructions-ttt").html($siteData[0].instructionsRompecabezas[0].common);
+			$(".ap-instructions-info").html($siteData[0].instructionsRompecabezas[0].copy);
+			$(".ap-instructions-img").append($siteData[0].instructionsRompecabezas[0].img);
 		}
 	};
 
@@ -254,16 +271,21 @@ function fillData(data) {
 	$(".ap-login-error-btn").html($siteData[0].loginModalInfo[0].errorBtn);
 }
 
-function countTT() {
-	var $tt = $(".listaCarteleraHorario h2"),
-		$ttLength = $tt.text().length,
-		$ttA = $(".listaCarteleraHorario a.btnInfoComplejo");
+function glowAnimation() {
+	var $tarElem = ".click-id-anim";
 
-	$.each($tt, function() {
-		if ($(this).text().length >= 30) {
-			$ttA.addClass("tt-colapsed");
-		}
-	});
+	TweenLite.defaultEase = Linear.easeNone;
+	var tl = new TimelineMax({ yoyo: true, repeat: -1 });
+	var dur = 0.8;
+	tl.to($tarElem, dur, { attr: { dx: 0, dy: 0, stdDeviation: 0 } }, 0);
+}
+
+function gameType() {
+	glowAnimation();
+
+	$('.click-id').on('click', function(){
+		modalCall("#ap-modal--instructions")
+	})
 }
 
 $(function() {

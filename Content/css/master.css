@@ -828,5 +828,8 @@ svg {
       .ap-game-menu #game-selection {
         font-size: 5.2em; } }
 
+.click-id {
+  cursor: pointer; }
+
 .ap--is-intro {
   overflow: hidden; }
