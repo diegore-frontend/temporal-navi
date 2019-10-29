@@ -14,12 +14,45 @@
 			"errorBtn": "Inténtalo de nuevo"
 		}
 	],
+	"leaveModalInfo": [
+		{
+			"title": "¡Espera!",
+			"info": "No te vallas, si lo haces perderás tu participación.",
+			"leaveBtn": "Salir",
+			"leaveBtnBack": "Regresar"
+		}
+	],
+	"termsModalInfo": [
+		{
+			"title": "Bases y condiciones"
+		}
+	],
+	"errorflowModalInfo": [
+		{
+			"title": "¡Lo sentimos!",
+			"info": "No completaste el reto",
+			"errorBtn": "Inténtalo de nuevo"
+		}
+	],
+	"errorGiftModalInfo": [
+		{
+			"title": "¡Ups!",
+			"info": "<p class='ap-txt'>Los regalos de hoy se agotaron</p><p class='ap-txt'>Regresa mañana</p>"
+		}
+	],
+	"holdOnModalInfo": [
+		{
+			"title": "Espera...",
+			"info": "<p class='ap-txt'>Aún quedan regalos, pero hay muchos usuarios jugando.</p><p class='ap-txt'>Inténtalo de nuevo en un momento.</p>"
+		}
+	],
 	"instructionsEncuentra": [
 		{
 			"common": "Instrucciones",
 			"title": "Encuentra el error",
 			"img": "<img src='/Content/img/55FC14BF0B007E29.jpg'>",
-			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a:</p> <p class='ap-txt'>Línea de abajo</p>"
+			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a encontrar el error.</p> <p class='ap-txt'>Te mostraremos 4 respuestas, sólo 1 es la correcta. Para ganar, debes contestar correctamente las 3 imagenes en menos de 2 minutos.</p>",
+			"btn": "Jugar"
 		}
 	],
 	"instructionsRompecabezas": [
@@ -27,7 +60,8 @@
 			"common": "Instrucciones",
 			"title": "Rompecabezas",
 			"img": "<img src='/Content/img/55FC14BF0B007E29.jpg'>",
-			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a:</p> <p class='ap-txt'>Línea de abajo</p>"
+			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a encontrar el error.</p> <p class='ap-txt'>Te mostraremos 4 respuestas, sólo 1 es la correcta. Para ganar, debes contestar correctamente las 3 imagenes en menos de 2 minutos.</p>",
+			"btn": "Jugar"
 		}
 	],
 	"instructionsTrivia": [
@@ -35,7 +69,8 @@
 			"common": "Instrucciones",
 			"title": "Trivia",
 			"img": "<img src='/Content/img/55FC14BF0B007E29.jpg'>",
-			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a:</p> <p class='ap-txt'>Línea de abajo</p>"
+			"copy": "<p class='ap-txt'>Ayuda a Duendepolito a encontrar el error.</p> <p class='ap-txt'>Te mostraremos 4 respuestas, sólo 1 es la correcta. Para ganar, debes contestar correctamente las 3 imagenes en menos de 2 minutos.</p>",
+			"btn": "Jugar"
 		}
 	]
 }

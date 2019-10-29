@@ -12,6 +12,9 @@
 			@include below(760px) {
 				font-size: 0.68em;
 			}
+			@include above(760px) {
+				justify-content: space-around;
+			}
 		}
 
 		&-logo {

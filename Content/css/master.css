@@ -11,6 +11,9 @@ body {
   font-family: "Lato", sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
+  @media screen and (min-width: 1200px) and (max-height: 670px) {
+    body {
+      font-size: 12px; } }
 
 article,
 aside,
@@ -213,6 +216,43 @@ option {
 svg {
   width: 100%;
   height: 100%; }
+
+.ps-container.ps-active-x > .ps-scrollbar-x-rail,
+.ps-container.ps-active-y > .ps-scrollbar-y-rail {
+  display: block; }
+
+.ps-container > .ps-scrollbar-y-rail {
+  background-color: rgba(112, 112, 112, 0.2);
+  display: none;
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1;
+  position: absolute;
+  right: 3px;
+  width: 0.5em; }
+
+.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0.5em;
+  position: absolute;
+  -webkit-transition: background-color 0.2s linear 0s;
+  transition: background-color 0.2s linear 0s;
+  width: 0.5em; }
+
+.ps-container:hover > .ps-scrollbar-x-rail,
+.ps-container:hover > .ps-scrollbar-y-rail {
+  opacity: 1; }
+
+.ps-container > .ps-scrollbar-x-rail.in-scrolling,
+.ps-container > .ps-scrollbar-y-rail.in-scrolling,
+.ps-container:hover > .ps-scrollbar-x-rail.in-scrolling,
+.ps-container:hover > .ps-scrollbar-y-rail.in-scrolling {
+  background-color: #000;
+  opacity: 1; }
+
+.ps-container:hover > .ps-scrollbar-x-rail:hover,
+.ps-container:hover > .ps-scrollbar-y-rail:hover {
+  opacity: 0.1; }
 
 .ap-intro-ui #logo-navidad .st0 {
   fill: #006633; }
@@ -509,6 +549,79 @@ svg {
 .ap-stands-svg #game-selection .st15 {
   fill: #c1272d; }
 
+.ap-mod-clack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .ap-mod-clack .script-modal .st0 {
+    fill: #4a697c; }
+  .ap-mod-clack .script-modal .st1 {
+    fill: #1b1b1b; }
+  .ap-mod-clack .script-modal .st2 {
+    opacity: 0.15;
+    stroke: #000000;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10; }
+  .ap-mod-clack .script-modal .st3 {
+    fill: #e6e4e5; }
+  .ap-mod-clack .script-modal .st4 {
+    fill: #d5a884; }
+  .ap-mod-clack .script-modal .st5 {
+    fill: #e6b849; }
+  .ap-mod-clack .script-modal .st6 {
+    opacity: 0.35; }
+  .ap-mod-clack .script-modal .st7 {
+    fill: #ffffff; }
+  .ap-mod-clack .script-modal .st8 {
+    fill: #c2c3c8; }
+  .ap-mod-clack .script-modal .st9 {
+    opacity: 0.1;
+    stroke: #000000;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10; }
+  .ap-mod-clack .script-modal .st10 {
+    opacity: 0.43;
+    fill: #ffffff; }
+  .ap-mod-clack .script-modal .st11 {
+    opacity: 5e-2; }
+  .ap-mod-clack .script-modal .st12 {
+    opacity: 3e-2; }
+  .ap-mod-clack .script-modal .st13 {
+    opacity: 0.44;
+    fill: #c2c3c8; }
+  .ap-mod-clack .script-modal .st14 {
+    opacity: 0.15; }
+  .ap-mod-clack .script-modal .st15 {
+    fill-rule: evenodd;
+    clip-rule: evenodd; }
+  .ap-mod-clack .script-modal .st16 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #fef2e9; }
+  .ap-mod-clack .script-modal .st17 {
+    fill: #ebcab4; }
+  .ap-mod-clack .script-modal .st18 {
+    fill: #edd0bc; }
+  .ap-mod-clack .script-modal .st19 {
+    opacity: 0.2; }
+  .ap-mod-clack .script-modal .st20 {
+    opacity: 0.45; }
+  .ap-mod-clack .script-modal .st21 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #ebcab4; }
+  .ap-mod-clack .script-modal .st22 {
+    -webkit-clip-path: url(#SVGID_2_);
+            clip-path: url(#SVGID_2_);
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #fef2e9; }
+  .ap-mod-clack .script-modal .st23 {
+    -webkit-clip-path: url(#SVGID_2_);
+            clip-path: url(#SVGID_2_); }
+
 .ap--is-game {
   overflow: hidden; }
 
@@ -548,6 +661,9 @@ svg {
     @media only screen and (max-width: 760px) {
       .ap-footer .ap-ft-area {
         font-size: 0.68em; } }
+    @media only screen and (min-width: 760px) {
+      .ap-footer .ap-ft-area {
+        justify-content: space-around; } }
   .ap-footer .ap-ft-logo {
     max-width: 8em;
     width: 100%;
@@ -586,8 +702,48 @@ svg {
     background: none;
     box-shadow: none;
     padding: 0.2em; }
+    @media only screen and (min-width: 760px) {
+      .ap-overlay .ap-btn-close {
+        right: 4em;
+        top: 3em; } }
     .ap-overlay .ap-btn-close .icon {
       fill: #f85155; }
+  .ap-overlay .ap-tt,
+  .ap-overlay .ap-txt,
+  .ap-overlay .ap-ttt {
+    font-family: "chewy", sans-serif; }
+  .ap-overlay .ap-tt {
+    font-size: 2.8em;
+    text-align: center; }
+    .ap-overlay .ap-tt--day {
+      font-size: 2.8em; }
+    .ap-overlay .ap-tt:nth-child(2) {
+      padding: 0.6em; }
+  .ap-overlay .ap-ttt {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0.2em; }
+  .ap-overlay .ap-txt {
+    max-width: 11em;
+    margin: 1em auto;
+    font-size: 1.4em;
+    text-align: center; }
+  .ap-overlay .ap-modal {
+    text-align: center;
+    max-width: 34em;
+    width: 100%; }
+    @media only screen and (min-width: 1200px) {
+      .ap-overlay .ap-modal {
+        display: -webkit-box;
+        display: flex;
+        height: 33em;
+        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
+    .ap-overlay .ap-modal-wrapp {
+      max-width: 24em;
+      width: 100%; }
 
 .ap-modal-flx {
   display: -webkit-box;
@@ -605,30 +761,6 @@ svg {
 .ap-modal--is-visible {
   display: block; }
 
-.ap-modal--login .ap-modal, .ap-modal--login-error .ap-modal {
-  text-align: center;
-  max-width: 34em;
-  width: 100%; }
-  .ap-modal--login .ap-modal-wrapp, .ap-modal--login-error .ap-modal-wrapp {
-    max-width: 24em;
-    width: 100%; }
-
-.ap-modal--login .ap-tt,
-.ap-modal--login .ap-txt, .ap-modal--login-error .ap-tt,
-.ap-modal--login-error .ap-txt {
-  font-family: "chewy", sans-serif; }
-
-.ap-modal--login .ap-tt--day, .ap-modal--login-error .ap-tt--day {
-  font-size: 2.8em; }
-
-.ap-modal--login .ap-tt:nth-child(2), .ap-modal--login-error .ap-tt:nth-child(2) {
-  padding: 0.6em; }
-
-.ap-modal--login .ap-txt, .ap-modal--login-error .ap-txt {
-  max-width: 10em;
-  margin: auto;
-  font-size: 1.4em; }
-
 .ap-modal--login .ap-flx {
   display: -webkit-box;
   display: flex;
@@ -637,6 +769,9 @@ svg {
           flex-direction: row;
   justify-content: space-around;
   padding: 1em; }
+
+.ap-modal--login .ap-login-tt {
+  font-size: 1.5em; }
 
 .ap-modal--login .ap-modal-nav {
   padding-top: 2em; }
@@ -650,9 +785,6 @@ svg {
     .ap-modal--login .ap-modal-nav .ap-btn:first-child {
       margin-right: 1em; }
 
-.ap-modal--login-error .ap-tt {
-  font-size: 2.8em; }
-
 .ap-modal--login-error .ap-modal-nav {
   margin: 2em auto; }
 
@@ -660,6 +792,161 @@ svg {
   max-width: 8em;
   margin: auto;
   padding: 0.2em 1.5em; }
+  @media only screen and (min-width: 760px) {
+    .ap-modal--login-error .ap-btn {
+      max-width: 11.4em;
+      padding: 0.2em; } }
+
+.ap-modal--error-flow .ap-modal-nav .ap-btn {
+  max-width: 8em;
+  margin: auto;
+  padding: 0.2em 1.5em; }
+  @media only screen and (min-width: 760px) {
+    .ap-modal--error-flow .ap-modal-nav .ap-btn {
+      max-width: 11.4em;
+      padding: 0.2em; } }
+
+.ap-modal--leave .ap-txt {
+  margin: 0.6em auto 1em; }
+  @media only screen and (min-width: 760px) {
+    .ap-modal--leave .ap-txt {
+      max-width: 13em; } }
+
+.ap-modal--leave .ap-modal-nav .ap-btn {
+  margin: auto; }
+  @media only screen and (max-width: 760px) {
+    .ap-modal--leave .ap-modal-nav .ap-btn {
+      max-width: 8em; } }
+  .ap-modal--leave .ap-modal-nav .ap-btn:nth-child(2) {
+    margin-top: 0.6em; }
+
+.ap-modal--terms .ap-modal {
+  max-width: 85%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 760px) {
+    .ap-modal--terms .ap-modal {
+      max-width: 95%; } }
+  @media only screen and (min-width: 760px) {
+    .ap-modal--terms .ap-modal-wrapp {
+      max-width: 40em; } }
+  .ap-modal--terms .ap-modal-terms-data {
+    padding-right: 1em;
+    font-size: 0.8em; }
+    @media only screen and (min-width: 760px) {
+      .ap-modal--terms .ap-modal-terms-data {
+        padding-right: 1.8em;
+        font-size: 1em; } }
+    .ap-modal--terms .ap-modal-terms-data p {
+      color: #fff;
+      padding-bottom: 0.6em; }
+      .ap-modal--terms .ap-modal-terms-data p a {
+        color: #fff;
+        text-decoration: underline; }
+    .ap-modal--terms .ap-modal-terms-data ul li,
+    .ap-modal--terms .ap-modal-terms-data ol li {
+      color: #fff;
+      padding-bottom: 0.6em; }
+      .ap-modal--terms .ap-modal-terms-data ul li a,
+      .ap-modal--terms .ap-modal-terms-data ol li a {
+        color: #fff;
+        text-decoration: underline; }
+
+.ap-modal--terms .ap-scroll {
+  height: calc(100vh - 16em);
+  margin-top: 1em; }
+  @media only screen and (min-width: 760px) {
+    .ap-modal--terms .ap-scroll {
+      height: calc(100vh - 20em); } }
+  @media only screen and (min-width: 1000px) {
+    .ap-modal--terms .ap-scroll {
+      height: calc(100vh - 24em); } }
+
+.ap-modal-script.ap-overlay {
+  overflow: hidden; }
+
+.ap-modal-script .ap-modal-flx {
+  position: relative;
+  z-index: 2; }
+
+.ap-modal-script .ap-tt {
+  color: #2a2a2a;
+  font-size: 1.8em; }
+
+.ap-modal-script .ap-ttt {
+  color: #2a2a2a; }
+
+.ap-modal-script .ap-modal-nav {
+  padding-left: 4em; }
+  .ap-modal-script .ap-modal-nav .ap-btn {
+    max-width: 6em; }
+
+.ap-modal-script .ap-overlay-area {
+  padding-top: 10.6em; }
+  @media screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait) {
+    .ap-modal-script .ap-overlay-area {
+      padding-top: 13.1em; } }
+  @media only screen and (min-width: 1200px) {
+    .ap-modal-script .ap-overlay-area {
+      padding-top: 0; } }
+
+.ap-modal-script .ap-modal-flx {
+  -webkit-box-pack: start;
+          justify-content: start; }
+  @media only screen and (min-width: 1200px) {
+    .ap-modal-script .ap-modal-flx {
+      -webkit-box-pack: center;
+              justify-content: center; } }
+
+@media screen and (max-width: 380px) and (orientation: portrait) {
+  .ap-modal-script {
+    font-size: 0.88em; } }
+
+@media screen and (max-width: 320px) and (orientation: portrait) {
+  .ap-modal-script {
+    font-size: 0.78em; } }
+
+.ap-mod-clack .script-modal {
+  position: absolute;
+  width: 30em;
+  left: 50%;
+  margin-left: -17.4em;
+  height: 54em;
+  top: 0; }
+  @media screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait) {
+    .ap-mod-clack .script-modal {
+      top: auto;
+      bottom: 0;
+      font-size: 1.2em; } }
+  @media only screen and (min-width: 1200px) {
+    .ap-mod-clack .script-modal {
+      font-size: 1.2em;
+      top: 50%;
+      margin-top: -24.9em; } }
+
+.ap-instructions-info {
+  max-width: 86%;
+  padding-left: 4em; }
+  .ap-instructions-info .ap-txt {
+    color: #2a2a2a;
+    font-family: "Lato", sans-serif;
+    font-size: 1.086em;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em 0 0;
+    text-align: left; }
+
+.ap-instructions-img {
+  max-width: 8em;
+  margin: 1em auto; }
+  .ap-instructions-img img {
+    width: 100%; }
+
+.ap-instructions-shape .ap-shape {
+  float: left;
+  shape-outside: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 117.2 422.4' style='enable-background:new 0 0 117.2 422.4;' xml:space='preserve'%3E%3Cpath class='st0' d='M0-180.8v347c0,0,5.9-14.5,19-17.9c13.1-3.5,36.7-10.4,50.6-3c13.9,7.5,37,26,25.7,64.3s-34,59.1-34,59.1 l3.6,32.4c0,0-7,48.2-61.4,90.8v56.3L0,451.2V-180.8z'/%3E%3C/svg%3E");
+  width: 11em;
+  height: 25.8em;
+  shape-margin: 1.6em; }
 
 .ap-ui-header {
   background-color: #f85155;

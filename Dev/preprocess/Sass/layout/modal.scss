@@ -1,6 +1,7 @@
 .ap {
 	&-overlay {
 		background-color: rgba(#000, 1);
+		// background: url("../img/bg-design-areas.png") no-repeat center;
 		display: none;
 		color: #fff;
 		height: 100%;
@@ -27,8 +28,61 @@
 			box-shadow: none;
 			padding: 0.2em;
 
+			@include above(760px) {
+				right: 4em;
+				top: 3em;
+			}
+
 			.icon {
 				fill: $base;
+			}
+		}
+		.ap-tt,
+		.ap-txt,
+		.ap-ttt {
+			font-family: $secondFont;
+		}
+
+		.ap-tt {
+			font-size: 2.8em;
+			text-align: center;
+			&--day {
+				font-size: 2.8em;
+			}
+
+			&:nth-child(2) {
+				padding: 0.6em;
+			}
+		}
+
+		.ap-ttt {
+			font-size: 1.4em;
+			text-align: center;
+			padding: 0.2em;
+		}
+
+		.ap-txt {
+			max-width: 11em;
+			margin: 1em auto;
+			font-size: 1.4em;
+			text-align: center;
+		}
+
+		.ap-modal {
+			text-align: center;
+			max-width: 34em;
+			width: 100%;
+
+			@include above(1200px) {
+				display: flex;
+				height: 33em;
+				justify-content: space-around;
+				flex-direction: column;
+			}
+
+			&-wrapp {
+				max-width: 24em;
+				width: 100%;
 			}
 		}
 	}
@@ -48,46 +102,16 @@
 		}
 
 		// &-login
-		&--login,
-		&--login-error {
-			.ap-modal {
-				text-align: center;
-				max-width: 34em;
-				width: 100%;
-
-				&-wrapp {
-					max-width: 24em;
-					width: 100%;
-				}
-			}
-			.ap-tt,
-			.ap-txt {
-				font-family: $secondFont;
-			}
-
-			.ap-tt {
-				&--day {
-					font-size: 2.8em;
-				}
-
-				&:nth-child(2) {
-					padding: 0.6em;
-				}
-			}
-
-			.ap-txt {
-				max-width: 10em;
-				margin: auto;
-				font-size: 1.4em;
-			}
-		}
-
 		&--login {
 			.ap-flx {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-around;
 				padding: 1em;
+			}
+
+			.ap-login-tt {
+				font-size: 1.5em;
 			}
 
 			.ap-modal-nav {
@@ -109,11 +133,7 @@
 				}
 			}
 		}
-
 		&--login-error {
-			.ap-tt {
-				font-size: 2.8em;
-			}
 			.ap-modal-nav {
 				margin: 2em auto;
 			}
@@ -121,6 +141,230 @@
 				max-width: 8em;
 				margin: auto;
 				padding: 0.2em 1.5em;
+
+				@include above(760px) {
+					max-width: 11.4em;
+					padding: 0.2em;
+				}
+			}
+		}
+
+		// Flow
+		&--error-flow {
+			.ap-modal-nav {
+				.ap-btn {
+					max-width: 8em;
+					margin: auto;
+					padding: 0.2em 1.5em;
+
+					@include above(760px) {
+						max-width: 11.4em;
+						padding: 0.2em;
+					}
+				}
+			}
+		}
+		&--leave {
+			.ap-txt {
+				margin: 0.6em auto 1em;
+
+				@include above(760px) {
+					max-width: 13em;
+				}
+			}
+
+			.ap-modal-nav {
+				.ap-btn {
+					margin: auto;
+
+					@include below(760px) {
+						max-width: 8em;
+					}
+
+					&:nth-child(2) {
+						margin-top: 0.6em;
+					}
+				}
+			}
+		}
+
+		// Terms
+		&--terms {
+			.ap {
+				&-modal {
+					max-width: 85%;
+					margin: 0 auto;
+
+					@include above(760px) {
+						max-width: 95%;
+					}
+
+					&-wrapp {
+						@include above(760px) {
+							max-width: 40em;
+						}
+					}
+					&-terms-data {
+						padding-right: 1em;
+						font-size: 0.8em;
+
+						@include above(760px) {
+							padding-right: 1.8em;
+							font-size: 1em;
+						}
+
+						p {
+							color: #fff;
+							padding-bottom: 0.6em;
+
+							a {
+								color: #fff;
+								text-decoration: underline;
+							}
+						}
+
+						ul,
+						ol {
+							li {
+								color: #fff;
+								padding-bottom: 0.6em;
+
+								a {
+									color: #fff;
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+				}
+				&-scroll {
+					height: calc(100vh - 16em);
+					margin-top: 1em;
+
+					@include above(760px) {
+						height: calc(100vh - 20em);
+					}
+					@include above(1000px) {
+						height: calc(100vh - 24em);
+					}
+				}
+			}
+		}
+
+		// Instructions
+		&-script {
+			&.ap-overlay {
+				overflow: hidden;
+			}
+
+			.ap-modal-flx {
+				position: relative;
+				z-index: 2;
+			}
+
+			.ap-tt {
+				color: $fontSubase;
+				font-size: 1.8em;
+			}
+			.ap-ttt {
+				color: $fontSubase;
+			}
+
+			.ap-modal-nav {
+				padding-left: 4em;
+				.ap-btn {
+					max-width: 6em;
+				}
+			}
+
+			.ap-overlay-area {
+				padding-top: 10.6em;
+				@media screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait) {
+					padding-top: 13.1em;
+				}
+
+				@include above(1200px) {
+					padding-top: 0;
+				}
+			}
+
+			.ap-modal-flx {
+				justify-content: start;
+
+				@include above(1200px) {
+					justify-content: center;
+				}
+			}
+
+			@media screen and (max-width: 380px) and (orientation: portrait) {
+				font-size: 0.88em;
+			}
+
+			@media screen and (max-width: 320px) and (orientation: portrait) {
+				font-size: 0.78em;
+			}
+		}
+
+		&--instructions {
+		}
+	}
+
+	// Modal Script
+	&-mod-clack {
+		.script-modal {
+			position: absolute;
+			width: 30em;
+			left: 50%;
+			margin-left: -17.4em;
+			height: 54em;
+			top: 0;
+
+			@media screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait) {
+				top: auto;
+				bottom: 0;
+				font-size: 1.2em;
+			}
+
+			@include above(1200px) {
+				font-size: 1.2em;
+				top: 50%;
+				margin-top: -24.9em;
+			}
+		}
+	}
+
+	&-instructions {
+		&-info {
+			max-width: 86%;
+			padding-left: 4em;
+
+			.ap-txt {
+				color: $fontSubase;
+				font-family: $baseFont;
+				font-size: 1.086em;
+				max-width: 100%;
+				margin: 0 auto;
+				padding: 1em 0 0;
+				text-align: left;
+			}
+		}
+
+		&-img {
+			max-width: 8em;
+			margin: 1em auto;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&-shape {
+			.ap-shape {
+				float: left;
+				shape-outside: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 117.2 422.4' style='enable-background:new 0 0 117.2 422.4;' xml:space='preserve'%3E%3Cpath class='st0' d='M0-180.8v347c0,0,5.9-14.5,19-17.9c13.1-3.5,36.7-10.4,50.6-3c13.9,7.5,37,26,25.7,64.3s-34,59.1-34,59.1 l3.6,32.4c0,0-7,48.2-61.4,90.8v56.3L0,451.2V-180.8z'/%3E%3C/svg%3E");
+				width: 11em;
+				height: 25.8em;
+				shape-margin: 1.6em;
 			}
 		}
 	}

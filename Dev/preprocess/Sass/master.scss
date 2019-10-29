@@ -10,10 +10,16 @@ body {
 	font-family: $baseFont;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+
+	// Macbook con Barra
+	@media screen and (min-width: 1200px) and (max-height: 670px) {
+		font-size: 12px;
+	}
 }
 
 // Tools
 @import "./components/cmps.normalizer";
+@import "./components/cmps.scrollbar";
 
 // Layout
 @import "./layout/layout";
