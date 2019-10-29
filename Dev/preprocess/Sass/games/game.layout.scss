@@ -1,0 +1,16 @@
+.ap-game {
+	&-stage {
+		height: calc(100vh - 3.5em);
+
+		@include above(760px) {
+			height: calc(100vh - 5.2em);
+		}
+	}
+
+	&-area {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		flex-direction: column;
+	}
+}

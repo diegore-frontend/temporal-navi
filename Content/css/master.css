@@ -563,11 +563,12 @@ svg {
     opacity: 0.15;
     stroke: #000000;
     stroke-width: 0.25;
-    stroke-miterlimit: 10; }
+    stroke-miterlimit: 10;
+    enable-background: new; }
   .ap-mod-clack .script-modal .st3 {
     fill: #e6e4e5; }
   .ap-mod-clack .script-modal .st4 {
-    fill: #d5a884; }
+    fill: none; }
   .ap-mod-clack .script-modal .st5 {
     fill: #e6b849; }
   .ap-mod-clack .script-modal .st6 {
@@ -575,55 +576,56 @@ svg {
   .ap-mod-clack .script-modal .st7 {
     fill: #ffffff; }
   .ap-mod-clack .script-modal .st8 {
-    fill: #c2c3c8; }
+    fill: #aa8d49; }
   .ap-mod-clack .script-modal .st9 {
     opacity: 0.1;
     stroke: #000000;
     stroke-width: 0.25;
-    stroke-miterlimit: 10; }
+    stroke-miterlimit: 10;
+    enable-background: new; }
   .ap-mod-clack .script-modal .st10 {
     opacity: 0.43;
-    fill: #ffffff; }
+    fill: #ffffff;
+    enable-background: new; }
   .ap-mod-clack .script-modal .st11 {
     opacity: 5e-2; }
   .ap-mod-clack .script-modal .st12 {
     opacity: 3e-2; }
   .ap-mod-clack .script-modal .st13 {
     opacity: 0.44;
-    fill: #c2c3c8; }
+    fill: #aa8d49;
+    enable-background: new; }
   .ap-mod-clack .script-modal .st14 {
-    opacity: 0.15; }
+    opacity: 0.15;
+    enable-background: new; }
   .ap-mod-clack .script-modal .st15 {
-    fill-rule: evenodd;
-    clip-rule: evenodd; }
+    opacity: 0.15; }
   .ap-mod-clack .script-modal .st16 {
     fill-rule: evenodd;
-    clip-rule: evenodd;
-    fill: #fef2e9; }
+    clip-rule: evenodd; }
   .ap-mod-clack .script-modal .st17 {
-    fill: #ebcab4; }
+    fill: #fef2e9; }
   .ap-mod-clack .script-modal .st18 {
     fill: #edd0bc; }
   .ap-mod-clack .script-modal .st19 {
-    opacity: 0.2; }
+    display: none;
+    fill: #edd0bc; }
   .ap-mod-clack .script-modal .st20 {
-    opacity: 0.45; }
-  .ap-mod-clack .script-modal .st21 {
     fill-rule: evenodd;
     clip-rule: evenodd;
     fill: #ebcab4; }
-  .ap-mod-clack .script-modal .st22 {
-    -webkit-clip-path: url(#SVGID_2_);
-            clip-path: url(#SVGID_2_);
-    fill-rule: evenodd;
-    clip-rule: evenodd;
-    fill: #fef2e9; }
-  .ap-mod-clack .script-modal .st23 {
-    -webkit-clip-path: url(#SVGID_2_);
-            clip-path: url(#SVGID_2_); }
+  .ap-mod-clack .script-modal .st21 {
+    fill: #ebcab4; }
+
+.ap--is-game-menu {
+  overflow: hidden; }
+  .ap--is-game-menu .ap-modal--game-loader {
+    display: none; }
 
 .ap--is-game {
   overflow: hidden; }
+  .ap--is-game .ap-modal--game-loader .ap-load-bar-progress {
+    width: 51%; }
 
 .ap-btn {
   background: -webkit-gradient(linear, right top, left top, from(#f85155), to(#ff6763));
@@ -728,22 +730,6 @@ svg {
     margin: 1em auto;
     font-size: 1.4em;
     text-align: center; }
-  .ap-overlay .ap-modal {
-    text-align: center;
-    max-width: 34em;
-    width: 100%; }
-    @media only screen and (min-width: 1200px) {
-      .ap-overlay .ap-modal {
-        display: -webkit-box;
-        display: flex;
-        height: 33em;
-        justify-content: space-around;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-direction: column; } }
-    .ap-overlay .ap-modal-wrapp {
-      max-width: 24em;
-      width: 100%; }
 
 .ap-modal-flx {
   display: -webkit-box;
@@ -770,20 +756,30 @@ svg {
   justify-content: space-around;
   padding: 1em; }
 
+.ap-modal--login .ap-txt {
+  font-size: 1.2em;
+  max-width: 100%;
+  margin: 0 auto; }
+  .ap-modal--login .ap-txt:nth-child(2) {
+    margin-bottom: 1em; }
+
 .ap-modal--login .ap-login-tt {
   font-size: 1.5em; }
 
-.ap-modal--login .ap-modal-nav {
-  padding-top: 2em; }
-  .ap-modal--login .ap-modal-nav .ap-btn {
-    width: 7.4em;
-    font-size: 1em;
-    height: 7.4em;
-    padding: 1em; }
-    .ap-modal--login .ap-modal-nav .ap-btn .icon {
-      fill: #fff; }
-    .ap-modal--login .ap-modal-nav .ap-btn:first-child {
-      margin-right: 1em; }
+@media only screen and (min-width: 760px) {
+  .ap-modal--login .ap-modal-nav {
+    max-width: 25em;
+    margin: 0 auto; } }
+
+.ap-modal--login .ap-modal-nav .ap-btn {
+  width: 7.4em;
+  font-size: 1em;
+  height: 7.4em;
+  padding: 1em; }
+  .ap-modal--login .ap-modal-nav .ap-btn .icon {
+    fill: #fff; }
+  .ap-modal--login .ap-modal-nav .ap-btn:first-child {
+    margin-right: 1em; }
 
 .ap-modal--login-error .ap-modal-nav {
   margin: 2em auto; }
@@ -864,6 +860,23 @@ svg {
 .ap-modal-script.ap-overlay {
   overflow: hidden; }
 
+.ap-modal-script .ap-modal {
+  text-align: center;
+  max-width: 34em;
+  width: 100%; }
+  @media only screen and (min-width: 1200px) {
+    .ap-modal-script .ap-modal {
+      display: -webkit-box;
+      display: flex;
+      height: 33em;
+      justify-content: space-around;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
+  .ap-modal-script .ap-modal-wrapp {
+    max-width: 24em;
+    width: 100%; }
+
 .ap-modal-script .ap-modal-flx {
   position: relative;
   z-index: 2; }
@@ -904,6 +917,65 @@ svg {
 @media screen and (max-width: 320px) and (orientation: portrait) {
   .ap-modal-script {
     font-size: 0.78em; } }
+
+.ap-modal--holdon .ap-hold-info {
+  color: #2a2a2a; }
+
+.ap-modal--holdon .ap-modal {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: calc(100vh - 14.6em); }
+
+.ap-modal--game-loader .ap-modal {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: calc(100vh - 18.6em); }
+  @media only screen and (min-width: 760px) {
+    .ap-modal--game-loader .ap-modal {
+      height: calc(100vh - 36.6em); } }
+  @media only screen and (min-width: 1000px) {
+    .ap-modal--game-loader .ap-modal {
+      height: calc(100vh - 21.6em); } }
+
+.ap-modal--game-loader .ap-tt {
+  font-size: 2.8em; }
+
+.ap-modal--game-loader .ap-load-bar {
+  background-color: rgba(112, 112, 112, 0.8);
+  position: relative;
+  width: 11.8em;
+  height: 1em;
+  border-radius: 10em;
+  margin: 1em auto 0;
+  overflow: hidden; }
+  .ap-modal--game-loader .ap-load-bar-progress {
+    background-color: #2a2a2a;
+    width: 0%;
+    height: 100%;
+    position: relative; }
+    .ap-modal--game-loader .ap-load-bar-progress:before {
+      background-color: #2a2a2a;
+      content: "";
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      right: -0.2em;
+      -webkit-transform: skewX(-20deg);
+              transform: skewX(-20deg); }
+  .ap-modal--game-loader .ap-load-bar--is-waiting-change .ap-load-bar-progress {
+    width: 50%; }
+  .ap-modal--game-loader .ap-load-bar--is-ready .ap-load-bar-progress {
+    width: 100%; }
 
 .ap-mod-clack .script-modal {
   position: absolute;
@@ -1117,6 +1189,166 @@ svg {
 
 .click-id {
   cursor: pointer; }
+
+.ap-game-stage {
+  height: calc(100vh - 3.5em); }
+  @media only screen and (min-width: 760px) {
+    .ap-game-stage {
+      height: calc(100vh - 5.2em); } }
+
+.ap-game-area {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+.jqPuzzle {
+  padding: 5px; }
+
+/* only needed if external css rules set defaults for divs,
+   this rule only resets the most common properties */
+.jqPuzzle div {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  border-style: none; }
+
+/* div wrapper which holds the puzzle pieces and the solution image */
+.jqPuzzle .jqp-wrapper {
+  padding: 2px;
+  border: 1px solid #ffffff;
+  background-color: #444455; }
+
+/* a single puzzle piece */
+.jqPuzzle .jqp-piece {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 36px; }
+
+.jqPuzzle .jqp-piece:hover {
+  border-style: dashed; }
+
+.jqPuzzle.jqp-solved .jqp-piece:hover {
+  border-style: solid; }
+
+/* the controls area which holds the buttons and the display */
+.jqPuzzle .jqp-controls {
+  float: left; }
+
+/* a button */
+.jqPuzzle .jqp-controls a {
+  margin-top: 5px;
+  margin-right: 8px;
+  padding: 3px 5px;
+  border: 1px outset #ffffff;
+  background-color: #777799;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: normal;
+  float: left; }
+
+.jqPuzzle .jqp-controls a:hover {
+  background-color: #7777bb; }
+
+/* toggle/down state for buttons */
+.jqPuzzle .jqp-controls a.jqp-toggle,
+.jqPuzzle .jqp-controls a.jqp-down {
+  padding-left: 4px;
+  padding-right: 6px;
+  border-style: inset;
+  background-color: #bbbbff; }
+
+/* disabled state for buttons */
+.jqPuzzle .jqp-controls a.jqp-disabled {
+  background-color: #ddddee;
+  color: #ffffff; }
+
+/* the area which holds the moves/seconds display */
+.jqPuzzle .jqp-controls span {
+  margin-top: 5px;
+  padding: 2px 4px;
+  padding-left: 0px;
+  border: none;
+  background-color: transparent;
+  color: #666666;
+  font-size: 14px;
+  float: left; }
+
+/* disabled state for the display (non-shuffled puzzle) */
+.jqPuzzle .jqp-controls span.jqp-disabled {
+  color: #aaaaaa; }
+
+/* solved state for the display (non-shuffled puzzle) */
+.jqPuzzle.jqp-solved .jqp-controls span {
+  padding: 1px 3px;
+  border: 1px dotted #0f8f08;
+  background-color: #9fef86;
+  color: #0f8f08; }
+
+/* a text field for the moves/seconds display */
+.jqPuzzle .jqp-controls span input {
+  margin: 0px 3px;
+  padding: 3px;
+  padding-bottom: 2px;
+  border-style: none;
+  background-color: #ffffff;
+  color: #666666;
+  font-weight: bold;
+  text-align: right; }
+
+/* disabled state for the text fields */
+.jqPuzzle .jqp-controls span.jqp-disabled input {
+  background-color: #eeeeff;
+  color: #aaaaaa; }
+
+/* solved state for the text fields */
+.jqPuzzle.jqp-solved .jqp-controls span input {
+  background-color: #c2ffaf;
+  color: #444444; }
+
+.ap-puzzle-cont {
+  position: relative;
+  width: 18.5em;
+  height: 18.5em;
+  margin: auto; }
+  @media only screen and (min-width: 360px) {
+    .ap-puzzle-cont {
+      font-size: 1.14em; } }
+  @media only screen and (min-width: 760px) {
+    .ap-puzzle-cont {
+      font-size: 1.4em; } }
+
+.ap-puzzle-img {
+  -webkit-transform: scale(0.68);
+          transform: scale(0.68);
+  left: 50%;
+  margin-left: -224px;
+  position: absolute;
+  top: 50%;
+  margin-top: -224px; }
+  @media only screen and (min-width: 360px) {
+    .ap-puzzle-img {
+      -webkit-transform: scale(0.78);
+              transform: scale(0.78); } }
+  @media only screen and (min-width: 760px) {
+    .ap-puzzle-img {
+      -webkit-transform: scale(0.96);
+              transform: scale(0.96); } }
+  .ap-puzzle-img div:nth-child(2) {
+    display: none; }
+
+.ap-puzzle-counter {
+  text-align: center;
+  padding: 1em; }
+  .ap-puzzle-counter .ap-txt {
+    font-family: "chewy", sans-serif;
+    font-size: 1.6em; }
+    .ap-puzzle-counter .ap-txt--timer {
+      font-size: 2em; }
 
 .ap--is-intro {
   overflow: hidden; }

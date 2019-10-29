@@ -20,6 +20,10 @@ function terms(termsUrl) {
 }
 
 function globLoader() {
+	$(".ap-modal--game-loader")
+		.fadeOut()
+		.removeAttr("style");
+
 	$(".ap-modal--loading").fadeOut("1", function() {
 		$(this)
 			.removeClass("ap-modal--is-visible")
@@ -33,9 +37,21 @@ function globLoader() {
 	});
 }
 
+function gameLoader() {
+	var $prog = $(".ap-load-bar-progress");
+	// Tween Animation
+	TweenMax.to($prog, 1, { width: "100%", onComplete: loadOut });
+}
+
 function loadDoc() {
+	var $isGame = $(".ap-game-stage").length;
+
 	$(".ap").imagesLoaded({ background: true }, function() {
-		globLoader();
+		if ($isGame) {
+			gameLoader();
+		} else {
+			globLoader();
+		}
 	});
 }
 
@@ -81,11 +97,8 @@ function setReadyHome() {
 }
 
 function init() {
-	// // Trigers when loader fadeOuts
+	// Trigers when loader fadeOuts
 	intro();
-	if ($(".ap-scroll").length) {
-		$(".ap-scroll").perfectScrollbar();
-	}
 }
 
 function hashur() {
@@ -152,6 +165,8 @@ function modalBoix() {
 
 function isGame() {
 	if ($(".ap-game").length) {
+		$("body").addClass("ap--is-game-menu");
+	} else if ($(".ap-game-stage").length) {
 		$("body").addClass("ap--is-game");
 	}
 }
@@ -183,8 +198,6 @@ function docData() {
 }
 
 function useReturnData(data) {
-	$siteData = data;
-
 	gamifiying(data);
 	fillData(data);
 }
@@ -205,7 +218,9 @@ function gamifiying(data) {
 	);
 
 	var $animationDays = {
-		runAnimationDay1: function() {},
+		runAnimationDay1: function() {
+			console.log("Pine Animation for day One");
+		},
 		runAnimationDay2: function() {
 			console.log("Pine Animation for day two");
 		}
@@ -242,6 +257,7 @@ function gamifiying(data) {
 		runGameRompecabezas: function(data) {
 			console.log("Rompe Cabezas game settings");
 			gameType();
+
 			$(".ap-instructions-tt").html(
 				$siteData[0].instructionsRompecabezas[0].title
 			);
@@ -302,6 +318,9 @@ function fillData(data) {
 	// Gift Error
 	$(".ap-gift-err-tt").html($siteData[0].errorGiftModalInfo[0].title);
 	$(".ap-gift-err-info").html($siteData[0].errorGiftModalInfo[0].info);
+
+	// Loader
+	$(".ap-load-tt").html($siteData[0].loaderModalInfo[0].tt);
 }
 
 function glowAnimation() {
@@ -317,7 +336,36 @@ function gameType() {
 	glowAnimation();
 
 	$(".click-id").on("click", function() {
-		modalCall("#ap-modal--holdon");
+		modalCall("#ap-modal--instructions");
+	});
+
+	// Animación de instrucciones a Juego
+	$("#ap-play-game").on("click", function() {
+		modalCall("#ap-modal--game-loader");
+
+		var $progU = $(".ap-load-bar-progress");
+		$timeWait = 1;
+
+		// Tween Animation
+		TweenMax.to($progU, $timeWait, { width: "50%", onComplete: goToGame });
+	});
+}
+
+function goToGame() {
+	var $game = $gameSts.toLowerCase();
+
+	window.location.replace("http://localhost:3000/html/game-" + $game + ".html");
+}
+
+function loadOut() {
+	$(".ap-modal--game-loader").fadeOut("1000", function() {
+		$(this)
+			.removeClass("ap-modal--is-visible")
+			.removeAttr("style");
+		$("body")
+			.removeClass("ap--is-loading")
+			.addClass("ap--is-ready");
+		console.log("Game counter starts Here motha fuckas");
 	});
 }
 
@@ -339,4 +387,8 @@ $(function() {
 			modalCall("#ap-modal--login-error");
 		}
 	});
+
+	if ($(".ap-scroll").length) {
+		$(".ap-scroll").perfectScrollbar();
+	}
 });

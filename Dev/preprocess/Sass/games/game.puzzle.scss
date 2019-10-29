@@ -1,0 +1,186 @@
+// Puzzle Defaults
+.jqPuzzle {
+	padding: 5px;
+}
+
+/* only needed if external css rules set defaults for divs,
+   this rule only resets the most common properties */
+.jqPuzzle div {
+	background-color: transparent;
+	margin: 0px;
+	padding: 0px;
+	border-style: none;
+}
+
+/* div wrapper which holds the puzzle pieces and the solution image */
+.jqPuzzle .jqp-wrapper {
+	padding: 2px;
+	border: 1px solid #ffffff;
+	background-color: #444455;
+}
+
+/* a single puzzle piece */
+.jqPuzzle .jqp-piece {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 36px;
+}
+
+.jqPuzzle .jqp-piece:hover {
+	border-style: dashed;
+}
+
+.jqPuzzle.jqp-solved .jqp-piece:hover {
+	border-style: solid;
+}
+
+/* the controls area which holds the buttons and the display */
+.jqPuzzle .jqp-controls {
+	float: left;
+}
+
+/* a button */
+.jqPuzzle .jqp-controls a {
+	margin-top: 5px;
+	margin-right: 8px;
+	padding: 3px 5px;
+	border: 1px outset #ffffff;
+	background-color: #777799;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: normal;
+	float: left;
+}
+
+.jqPuzzle .jqp-controls a:hover {
+	background-color: #7777bb;
+}
+
+/* toggle/down state for buttons */
+.jqPuzzle .jqp-controls a.jqp-toggle,
+.jqPuzzle .jqp-controls a.jqp-down {
+	padding-left: 4px;
+	padding-right: 6px;
+	border-style: inset;
+	background-color: #bbbbff;
+}
+
+/* disabled state for buttons */
+.jqPuzzle .jqp-controls a.jqp-disabled {
+	background-color: #ddddee;
+	color: #ffffff;
+}
+
+/* the area which holds the moves/seconds display */
+.jqPuzzle .jqp-controls span {
+	margin-top: 5px;
+	padding: 2px 4px;
+	padding-left: 0px;
+	border: none;
+	background-color: transparent;
+	color: #666666;
+	font-size: 14px;
+	float: left;
+}
+
+/* disabled state for the display (non-shuffled puzzle) */
+.jqPuzzle .jqp-controls span.jqp-disabled {
+	color: #aaaaaa;
+}
+
+/* solved state for the display (non-shuffled puzzle) */
+.jqPuzzle.jqp-solved .jqp-controls span {
+	padding: 1px 3px;
+	border: 1px dotted #0f8f08;
+	background-color: #9fef86;
+	color: #0f8f08;
+}
+
+/* a text field for the moves/seconds display */
+.jqPuzzle .jqp-controls span input {
+	margin: 0px 3px;
+	padding: 3px;
+	padding-bottom: 2px;
+	border-style: none;
+	background-color: #ffffff;
+	color: #666666;
+	font-weight: bold;
+	text-align: right;
+}
+
+/* disabled state for the text fields */
+.jqPuzzle .jqp-controls span.jqp-disabled input {
+	background-color: #eeeeff;
+	color: #aaaaaa;
+}
+
+/* solved state for the text fields */
+.jqPuzzle.jqp-solved .jqp-controls span input {
+	background-color: #c2ffaf;
+	color: #444444;
+}
+
+.ap-puzzle {
+	&-cont {
+		position: relative;
+		width: 18.5em;
+		height: 18.5em;
+		margin: auto;
+
+		@include above(360px) {
+			font-size: 1.14em;
+		}
+		@include above(760px) {
+			font-size: 1.4em;
+		}
+	}
+
+	&-img {
+		transform: scale(0.68);
+		left: 50%;
+		margin-left: -224px;
+		position: absolute;
+		top: 50%;
+		margin-top: -224px;
+
+		@include above(360px) {
+			transform: scale(0.78);
+		}
+		@include above(760px) {
+			transform: scale(0.96);
+		}
+
+		div {
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+	}
+
+	// Local Layout
+	&-counter {
+		text-align: center;
+		padding: 1em;
+
+		.ap-txt {
+			font-family: $secondFont;
+			font-size: 1.6em;
+
+			&--timer {
+				font-size: 2em;
+			}
+		}
+	}
+}
+
+// @media screen and (min-width: 760px) and (orientation: portrait)
+// 	transform: scale(0.68)
+
+// +above(1000px)
+// 	transform: scale(.78)
+
+// +above(1200px)
+// 	transform: scale(.84)
+
+// @media screen and (min-width: 1366px) and (max-height: 700px) and (max-width: 1600px)
+// 	transform: scale(.74)

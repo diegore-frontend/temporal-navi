@@ -321,12 +321,13 @@
 				stroke: #000000;
 				stroke-width: 0.25;
 				stroke-miterlimit: 10;
+				enable-background: new;
 			}
 			.st3 {
 				fill: #e6e4e5;
 			}
 			.st4 {
-				fill: #d5a884;
+				fill: none;
 			}
 			.st5 {
 				fill: #e6b849;
@@ -338,17 +339,19 @@
 				fill: #ffffff;
 			}
 			.st8 {
-				fill: #c2c3c8;
+				fill: #aa8d49;
 			}
 			.st9 {
 				opacity: 0.1;
 				stroke: #000000;
 				stroke-width: 0.25;
 				stroke-miterlimit: 10;
+				enable-background: new;
 			}
 			.st10 {
 				opacity: 0.43;
 				fill: #ffffff;
+				enable-background: new;
 			}
 			.st11 {
 				opacity: 5e-2;
@@ -358,49 +361,55 @@
 			}
 			.st13 {
 				opacity: 0.44;
-				fill: #c2c3c8;
+				fill: #aa8d49;
+				enable-background: new;
 			}
 			.st14 {
 				opacity: 0.15;
+				enable-background: new;
 			}
 			.st15 {
-				fill-rule: evenodd;
-				clip-rule: evenodd;
+				opacity: 0.15;
 			}
 			.st16 {
 				fill-rule: evenodd;
 				clip-rule: evenodd;
-				fill: #fef2e9;
 			}
 			.st17 {
-				fill: #ebcab4;
+				fill: #fef2e9;
 			}
 			.st18 {
 				fill: #edd0bc;
 			}
 			.st19 {
-				opacity: 0.2;
+				display: none;
+				fill: #edd0bc;
 			}
 			.st20 {
-				opacity: 0.45;
-			}
-			.st21 {
 				fill-rule: evenodd;
 				clip-rule: evenodd;
 				fill: #ebcab4;
 			}
-			.st22 {
-				clip-path: url(#SVGID_2_);
-				fill-rule: evenodd;
-				clip-rule: evenodd;
-				fill: #fef2e9;
-			}
-			.st23 {
-				clip-path: url(#SVGID_2_);
+			.st21 {
+				fill: #ebcab4;
 			}
 		}
 	}
+	&--is-game-menu {
+		overflow: hidden;
+
+		.ap-modal--game-loader {
+			display: none;
+		}
+	}
+
 	&--is-game {
 		overflow: hidden;
+
+		.ap-modal--game-loader {
+			.ap-load-bar-progress {
+				width: 51%;
+			}
+		}
 	}
 }

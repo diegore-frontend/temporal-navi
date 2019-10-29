@@ -33,5 +33,9 @@ body {
 @import "./pages/opa-terms";
 @import "./pages/game-menu";
 
+// Games
+@import "./games/game.layout";
+@import "./games/game.puzzle";
+
 // Delightfull
 @import "./layout/delightfull";

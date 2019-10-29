@@ -3,16 +3,19 @@ extend ../layout/_layout
 block content
 	section.ap-onepage
 		section.ap-op.ap-op--intro
-			// Intro
+			//- Intro
 			include ../partials/part.onepage/intro
 
 		section.ap-op.ap-op--others#ap-others
-			// Other Games & Sponsors
+			//- Other Games & Sponsors
 			include ../partials/part.onepage/others
 
 		section.ap-op.ap-op--terms
-			// Terms
+			//- Terms
 			include ../partials/part.onepage/terms
 
 		//- Footer
 		include ../partials/part.master/part.footer.pug
+
+block insideModals
+	include ../partials/part.modals/modal-box--loading-global

@@ -8,10 +8,17 @@
 	"loginModalInfo": [
 		{
 			"title": "Inicia Sesión",
-			"info": "Ayuda a Duendepolito a decorar nuestro árbol de Navidad.",
+			"info": "<p class='ap-txt'>Duendepolito tiene la misión de adornar el árbol Navideño Cinépolis<sup>®</sup></p><p class='ap-txt'>Ayúdalo y gana premios.</p>",
 			"errorTitle": "¡Oh oh!",
-			"errorInfo": "Al parecer haz entrado a otro almacén.",
+			"errorInfo": "Al parecer las llaves son incorrectas.",
 			"errorBtn": "Inténtalo de nuevo"
+		}
+	],
+	"loaderModalInfo": [
+		{
+			"title": "Loader",
+			"tt": "Cargando",
+			"dots": ""
 		}
 	],
 	"leaveModalInfo": [

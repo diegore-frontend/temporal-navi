@@ -7,8 +7,6 @@ html(lang="es-MX")
 			block content
 
 		// Modal Boxes
-		include ../partials/part.modals/modal-box--loading-global
-		include ../partials/part.modals/modal-box--loading-game
 		include ../partials/part.modals/modal-box--login
 		include ../partials/part.modals/modal-box--login-error
 		include ../partials/part.modals/modal-box--landscape
@@ -18,6 +16,8 @@ html(lang="es-MX")
 		include ../partials/part.modals/modal-box--terms
 		include ../partials/part.modals/modal-box--hold-afew
 
+		block insideModals
+
 		// SVG
 		include ../partials/part.master/part.svg.pug
 
@@ -25,3 +25,5 @@ html(lang="es-MX")
 			script(src="/Content/scripts/jquery-3.3.1.min.js")
 			script(src="/Content/scripts/vendors.min.js")
 			script(src="/Content/scripts/actions.js")
+
+		block insideScripts
