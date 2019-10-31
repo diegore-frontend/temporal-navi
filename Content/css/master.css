@@ -7,6 +7,7 @@
   font-style: normal; }
 
 body {
+  background: url("../img/bg-design-areas.png") no-repeat center;
   color: #222;
   font-family: "Lato", sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -1281,6 +1282,63 @@ svg {
   .ap-modal-script {
     font-size: 0.78em; } }
 
+.ap-modal--instructions .ap-tt, .ap-modal--instructions .ap-ttt, .ap-modal--instructions .ap-txt, .ap-modal--instructions .ap-inst-img, .ap-modal--instructions .ap-play-btn {
+  opacity: 0;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  -webkit-transform: translateY(-0.6em);
+          transform: translateY(-0.6em); }
+
+.ap-modal--instructions .ap-mod-clack {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  -webkit-transition: .20s ease-in-out;
+  transition: .20s ease-in-out; }
+  .ap-modal--instructions .ap-mod-clack--open {
+    -webkit-transform: none;
+            transform: none; }
+
+.ap-modal--instructions-open .ap-tt {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
+
+.ap-modal--instructions-open .ap-ttt {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s; }
+
+.ap-modal--instructions-open .ap-txt {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s; }
+  .ap-modal--instructions-open .ap-txt:nth-child(2) {
+    -webkit-transition-delay: .6s;
+            transition-delay: .6s; }
+  .ap-modal--instructions-open .ap-txt:nth-child(3) {
+    -webkit-transition-delay: .7s;
+            transition-delay: .7s; }
+
+.ap-modal--instructions-open .ap-inst-img {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: .8s;
+          transition-delay: .8s; }
+
+.ap-modal--instructions-open .ap-play-btn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: .9s;
+          transition-delay: .9s; }
+
 .ap-modal--holdon .ap-hold-info {
   color: #2a2a2a; }
 
@@ -1569,6 +1627,15 @@ svg {
   -webkit-box-direction: normal;
           flex-direction: column; }
 
+.ap-counter {
+  text-align: center;
+  padding: 1em; }
+  .ap-counter .ap-txt {
+    font-family: "chewy", sans-serif;
+    font-size: 1.6em; }
+    .ap-counter .ap-txt--timer {
+      font-size: 2em; }
+
 .jqPuzzle {
   padding: 5px; }
 
@@ -1704,14 +1771,83 @@ svg {
   .ap-puzzle-img div:nth-child(2) {
     display: none; }
 
-.ap-puzzle-counter {
-  text-align: center;
-  padding: 1em; }
-  .ap-puzzle-counter .ap-txt {
-    font-family: "chewy", sans-serif;
-    font-size: 1.6em; }
-    .ap-puzzle-counter .ap-txt--timer {
-      font-size: 2em; }
+.ap-trivia-controls {
+  max-width: 22em;
+  margin: 0 auto;
+  position: relative; }
+  @media only screen and (min-width: 760px) {
+    .ap-trivia-controls {
+      font-size: 1.2em; } }
+  .ap-trivia-controls--answers {
+    margin: auto;
+    max-width: 16em;
+    text-align: center;
+    font-size: 0.93em;
+    min-height: 16em;
+    -webkit-transform: translate(-1.1em, 1em);
+            transform: translate(-1.1em, 1em); }
+    @media only screen and (max-width: 350px) {
+      .ap-trivia-controls--answers {
+        font-size: .88em; } }
+    .ap-trivia-controls--answers ul {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center; }
+    .ap-trivia-controls--answers_item {
+      font-size: 1.5em;
+      height: 3.4em;
+      margin: 0.8em;
+      max-width: 20em;
+      padding: 0;
+      width: 3.4em;
+      position: relative; }
+      .ap-trivia-controls--answers_item img {
+        width: 100%;
+        display: inline-block;
+        vertical-align: baseline; }
+      .ap-trivia-controls--answers_item .ap-trivia-frame {
+        position: absolute;
+        width: 4.8em;
+        left: -0.7em;
+        top: -0.6em;
+        z-index: -1; }
+  .ap-trivia-controls--question {
+    height: 6em;
+    padding: 1.8em 3em 0 1.6em;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center; }
+
+.ap-trivia-flx {
+  position: relative;
+  z-index: 2; }
+
+.ap-trivia-box {
+  position: absolute;
+  top: -2em;
+  left: -2em;
+  right: -2em;
+  bottom: -2em; }
+
+.ap-f-error {
+  width: 90%;
+  margin: auto; }
+  .ap-f-error--imagen {
+    width: 100%;
+    max-width: 90%; }
 
 .ap--is-intro {
   overflow: hidden; }

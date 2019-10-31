@@ -6,6 +6,7 @@
 @import "./components/cmps.fonts";
 
 body {
+	background: url("../img/bg-design-areas.png") no-repeat center;
 	color: #222;
 	font-family: $baseFont;
 	-moz-osx-font-smoothing: grayscale;
@@ -36,6 +37,8 @@ body {
 // Games
 @import "./games/game.layout";
 @import "./games/game.puzzle";
+@import "./games/game.trivia-img";
+@import "./games/game.error";
 
 // Delightfull
 @import "./layout/delightfull";
