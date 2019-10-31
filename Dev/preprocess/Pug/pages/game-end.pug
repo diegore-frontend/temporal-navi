@@ -1,0 +1,13 @@
+extend ../layout/_layout
+
+block content
+	section.ap-game-menu.ap-game
+		include ../partials/part.master/part.frame.pug
+
+	include ../partials/part.master/part.footer.pug
+
+
+block insideModals
+	include ../partials/part.modals/modal-box--game-loading
+	include ../partials/part.modals/modal-box--loading-global
+
