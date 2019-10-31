@@ -14,3 +14,20 @@
 		flex-direction: column;
 	}
 }
+
+.ap {
+	// Local Layout
+	&-counter {
+		text-align: center;
+		padding: 1em;
+
+		.ap-txt {
+			font-family: $secondFont;
+			font-size: 1.6em;
+
+			&--timer {
+				font-size: 2em;
+			}
+		}
+	}
+}

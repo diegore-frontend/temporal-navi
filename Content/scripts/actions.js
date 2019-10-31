@@ -151,6 +151,7 @@ function modalBoix() {
 
 		$elm.fadeOut(function() {
 			$elm.removeClass("ap-modal--is-visible").removeAttr("style");
+			animateScript();
 		});
 	}
 
@@ -159,6 +160,8 @@ function modalBoix() {
 			$(this)
 				.removeClass("ap-modal--is-visible")
 				.removeAttr("style");
+
+			animateScript();
 		});
 	}
 }
@@ -180,6 +183,10 @@ function modalCall(modalId) {
 	$el.fadeIn(function() {
 		$el.addClass("ap-modal--is-visible");
 	});
+
+	if (modalId === '#ap-modal--instructions') {
+		animateScript();
+	}
 }
 
 function docData() {
@@ -367,6 +374,14 @@ function loadOut() {
 			.addClass("ap--is-ready");
 		console.log("Game counter starts Here motha fuckas");
 	});
+}
+
+function animateScript() {
+	var $clack = $(".ap-mod-clack"),
+			$el = $(".ap-modal--instructions");
+
+	$clack.toggleClass('ap-mod-clack--open');
+	$el.toggleClass('ap-modal--instructions-open');
 }
 
 $(function() {

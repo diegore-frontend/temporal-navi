@@ -16,15 +16,13 @@
   </head>
   <body class="ap ap--is-loading">
     <main class="ap-main">
-      <section class="ap-game-rompecabezas ap-game-stage">
+      <section class="ap-game-encuentra-error ap-game-stage">
         <article class="ap-game-area">
-          <div class="ap-puzzle">
-            <div class="ap-counter">
-              <p class="ap-txt">Tiempo restante</p>
-              <p class="ap-txt ap-txt--timer">2:55</p>
-            </div>
-            <div class="ap-puzzle-cont"><img class="ap-puzzle-img" src="/Content/img/puzzle/rompe-01.jpg" alt="Animals crossing"></div>
+          <div class="ap-counter">
+            <p class="ap-txt">Tiempo restante</p>
+            <p class="ap-txt ap-txt--timer">2:55</p>
           </div>
+          <figure class="ap-f-error"><img class="ap-f-error--imagen" src="/Content/img/img-muestra-encuentra-error.png" alt=""></figure>
         </article>
       </section>
       <footer class="ap-footer">
@@ -206,17 +204,5 @@
     <script src="/Content/scripts/jquery-3.3.1.min.js"></script>
     <script src="/Content/scripts/vendors.min.js"></script>
     <script src="/Content/scripts/actions.js"></script>
-    <script src="/Content/scripts/games-dev/jquery.jqpuzzle.full.js"></script>
-    <script>
-      $(function(){
-      	$('.ap-puzzle-img').jqPuzzle({
-      		rows: 3,
-      		cols: 3,
-      		hole: 9,
-      		numbers: !true,
-      		shuffle: true
-      	});
-      });
-    </script>
   </body>
 </html>

@@ -1,0 +1,11 @@
+.ap {
+	&-f-error {
+		width: 90%;
+		margin: auto;
+
+		&--imagen {
+			width: 100%;
+			max-width: 90%;
+		}
+	}
+}

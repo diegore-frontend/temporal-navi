@@ -1,0 +1,21 @@
+extend ../layout/_layout
+
+block content
+	section.ap-game-encuentra-error.ap-game-stage
+		article.ap-game-area
+
+			//- Encuentra error
+			.ap-counter
+				p.ap-txt Tiempo restante
+				p.ap-txt.ap-txt--timer 2:55
+
+			figure.ap-f-error
+				img.ap-f-error--imagen(src="/Content/img/img-muestra-encuentra-error.png", alt="")
+
+
+	include ../partials/part.master/part.footer.pug
+
+block insideModals
+	include ../partials/part.modals/modal-box--game-loading
+
+block insideScripts

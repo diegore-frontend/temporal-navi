@@ -1,0 +1,79 @@
+.ap {
+	&-trivia-controls {
+		max-width: 22em;
+		margin: 0 auto;
+		position: relative;
+
+		@include above(760px) {
+			font-size: 1.2em;
+		}
+
+		&--answers {
+			margin: auto;
+			max-width: 16em;
+			text-align: center;
+			font-size: 0.93em;
+			min-height: 16em;
+			transform: translate(-1.1em, 1em);
+
+			@include below(350px) {
+				font-size: .88em
+			}
+
+			ul {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+			}
+
+
+			&_item {
+				font-size: 1.5em;
+				height: 3.4em;
+				margin: 0.8em;
+				max-width: 20em;
+				padding: 0;
+				width: 3.4em;
+				position: relative;
+
+				img {
+					width: 100%;
+					display: inline-block;
+					vertical-align: baseline;
+				}
+
+				.ap-trivia-frame {
+					position: absolute;
+					width: 4.8em;
+					left: -0.7em;
+					top: -0.6em;
+					z-index: -1;
+				}
+			}
+		}
+		&--question {
+			height: 6em;
+			padding: 1.8em 3em 0 1.6em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&-trivia {
+		&-flx {
+			position: relative;
+			z-index: 2;
+		}
+		&-box {
+			position: absolute;
+			top: -2em;
+			left: -2em;
+			right: -2em;
+			bottom: -2em;
+		}
+	}
+}
