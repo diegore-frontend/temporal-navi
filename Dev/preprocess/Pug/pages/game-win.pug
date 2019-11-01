@@ -1,45 +1,11 @@
 extend ../layout/_layout
 
 block content
-	section.ap-game-trivia.ap-game-stage
-		article.ap-game-area
+	section.ap-game-menu.ap-game-end
+		.ap-stands-svg
+			.ap-stands-bg
 
-			//- Trivia
-			.ap-counter
-				p.ap-txt Tiempo restante
-				p.ap-txt.ap-txt--timer 2:55
-
-			section.ap-trivia-controls
-				div.ap-trivia-flx
-					div.ap-trivia-controls--question
-						div.ap-trivia-controls--question_sentence
-							span ¿Cuál es el nombre de nombre de nombre?
-
-					div.ap-trivia-controls--answers
-						ul
-							li.ap-trivia-controls--answers_item.selected-item
-								img(src="/Content/img/1-1.jpg" alt="1-1")
-								img.ap-trivia-frame(src="/Content/img/photo-frame.svg", alt="frame")
-
-							li.ap-trivia-controls--answers_item
-								img(src="/Content/img/1-1.jpg" alt="1-1")
-								img.ap-trivia-frame(src="/Content/img/photo-frame.svg", alt="frame")
-
-							li.ap-trivia-controls--answers_item
-								img(src="/Content/img/1-1.jpg" alt="1-1")
-								img.ap-trivia-frame(src="/Content/img/photo-frame.svg", alt="frame")
-
-							li.ap-trivia-controls--answers_item
-								img(src="/Content/img/1-1.jpg" alt="1-1")
-								img.ap-trivia-frame(src="/Content/img/photo-frame.svg", alt="frame")
-
-					nav.ap-trivia-controls-nav
-						section.ca-cntrivia--pagination
-							span 2 / 3
-
-				div.ap-trivia-box
-					include ../partials/part.master/part.trivia-box.pug
-
+		include ../partials/part.master/part.bg.pug
 
 	include ../partials/part.master/part.footer.pug
 

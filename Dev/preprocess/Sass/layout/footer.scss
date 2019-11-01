@@ -1,5 +1,4 @@
 .ap-footer {
-	background-color: $fontSubase;
 	.ap-ft {
 		&-area {
 			position: relative;
@@ -8,6 +7,7 @@
 			justify-content: space-between;
 			align-items: center;
 			padding: 1.6em 1em;
+			z-index: 4;
 
 			@include below(760px) {
 				font-size: 0.68em;

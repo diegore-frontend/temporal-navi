@@ -1,11 +1,20 @@
 .ap {
+	&-game-trivia {
+		.ap-counter {
+			@include above(760px) {
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+		}
+	}
 	&-trivia-controls {
 		max-width: 22em;
 		margin: 0 auto;
 		position: relative;
 
 		@include above(760px) {
-			font-size: 1.2em;
+			font-size: 1.18em;
 		}
 
 		&--answers {
@@ -17,7 +26,7 @@
 			transform: translate(-1.1em, 1em);
 
 			@include below(350px) {
-				font-size: .88em
+				font-size: 0.88em;
 			}
 
 			ul {
@@ -27,7 +36,6 @@
 				justify-content: center;
 				align-items: center;
 			}
-
 
 			&_item {
 				font-size: 1.5em;

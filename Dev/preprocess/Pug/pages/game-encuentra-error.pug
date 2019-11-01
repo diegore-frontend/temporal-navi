@@ -5,13 +5,18 @@ block content
 		article.ap-game-area
 
 			//- Encuentra error
-			.ap-counter
-				p.ap-txt Tiempo restante
-				p.ap-txt.ap-txt--timer 2:55
+			.ap-f-error
+				.ap-counter
+					p.ap-txt Tiempo restante
+					p.ap-txt.ap-txt--timer 2:55
 
-			figure.ap-f-error
-				img.ap-f-error--imagen(src="/Content/img/img-muestra-encuentra-error.png", alt="")
+				figure.ap-f-error-holder
+					img.ap-f-error--imagen(src="/Content/img/img-muestra-encuentra-error.png", alt="")
 
+	.ap-stands-svg
+		.ap-stands-bg
+			.ap-game-bg
+				.ap-game-rack
 
 	include ../partials/part.master/part.footer.pug
 

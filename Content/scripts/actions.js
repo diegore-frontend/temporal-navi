@@ -184,7 +184,7 @@ function modalCall(modalId) {
 		$el.addClass("ap-modal--is-visible");
 	});
 
-	if (modalId === '#ap-modal--instructions') {
+	if (modalId === "#ap-modal--instructions") {
 		animateScript();
 	}
 }
@@ -378,10 +378,10 @@ function loadOut() {
 
 function animateScript() {
 	var $clack = $(".ap-mod-clack"),
-			$el = $(".ap-modal--instructions");
+		$el = $(".ap-modal--instructions");
 
-	$clack.toggleClass('ap-mod-clack--open');
-	$el.toggleClass('ap-modal--instructions-open');
+	$clack.toggleClass("ap-mod-clack--open");
+	$el.toggleClass("ap-modal--instructions-open");
 }
 
 $(function() {
@@ -406,4 +406,8 @@ $(function() {
 	if ($(".ap-scroll").length) {
 		$(".ap-scroll").perfectScrollbar();
 	}
+
+	var $pene = $(window).height();
+
+	console.log($pene);
 });

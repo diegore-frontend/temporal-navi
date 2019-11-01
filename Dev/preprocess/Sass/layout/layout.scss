@@ -251,54 +251,433 @@
 		overflow: hidden;
 	}
 	&-stands-svg {
-		#game-selection {
+		.dinamic-rack {
 			.st0 {
-				fill: #5f0015;
-			}
-			.st1 {
-				fill: #42210b;
-			}
-			.st2 {
-				fill: #603813;
-			}
-			.st3 {
-				fill: #ffff00;
-			}
-			.st4 {
-				fill: #ffffff;
-			}
-			.st5 {
-				fill: #00a99d;
-			}
-			.st6 {
-				fill: #0000ff;
+				fill: #101030;
 			}
 			.st7 {
-				fill: #8cc63f;
+				opacity: 0.48;
 			}
 			.st8 {
-				fill: #ff7bac;
+				fill: #292665;
 			}
 			.st9 {
-				fill: #22b573;
+				fill: #202051;
 			}
-			.st10 {
-				fill: #ff3f1f;
+			.st17 {
+				opacity: 0.89;
 			}
-			.st11 {
-				fill: #00dfdb;
+			.st18 {
+				fill: #1b1b1b;
 			}
-			.st12 {
-				fill: #492a0f;
+			.st19 {
+				opacity: 0.34;
 			}
-			.st13 {
-				fill: #39b54a;
+			.st20 {
+				fill: #fff;
 			}
-			.st14 {
-				fill: #006837;
+			.st25 {
+				opacity: 0.63;
+				fill: #211915;
 			}
-			.st15 {
-				fill: #c1272d;
+			.st26 {
+				opacity: 0.39;
+			}
+			.st30 {
+				fill: #bc9e6c;
+			}
+			.st31 {
+				fill: #af8241;
+			}
+			.st32 {
+				fill: #2a9b47;
+			}
+			.st33 {
+				fill: #4fc974;
+			}
+			.st34 {
+				fill: none;
+				stroke: #000;
+				stroke-width: 0.25;
+				stroke-miterlimit: 10;
+			}
+			.st35 {
+				fill: #9dffbe;
+			}
+			.st36 {
+				opacity: 0.21;
+				fill: #211915;
+			}
+			.st37 {
+				fill: #2262d3;
+			}
+			.st38 {
+				fill: #4781ff;
+			}
+			.st39 {
+				fill: none;
+				stroke: #ffc200;
+				stroke-width: 2;
+				stroke-miterlimit: 10;
+			}
+			.st40,
+			.st41 {
+				fill: #ff4e4e;
+			}
+			.st41 {
+				opacity: 0.49;
+			}
+			.st42 {
+				opacity: 0.28;
+				fill: #fff;
+			}
+			.st43 {
+				fill: #ffbe06;
+			}
+			.st44 {
+				fill: #5a93f9;
+			}
+			.st45 {
+				fill: #997a4d;
+			}
+			.st46 {
+				fill: #dbb783;
+			}
+			.st48 {
+				fill: #9a999e;
+			}
+			.st49 {
+				fill: #1f1b20;
+			}
+			.st50 {
+				fill: #ccb087;
+			}
+			.st51 {
+				opacity: 0.38;
+				fill: #997a4d;
+			}
+			.st52 {
+				opacity: 0.1;
+				fill: #211915;
+			}
+			.st54 {
+				opacity: 0.15;
+			}
+			.st55 {
+				opacity: 0.67;
+				fill: #211915;
+			}
+			.st59,
+			.st60 {
+				fill: #616161;
+				stroke: #464646;
+				stroke-width: 0.25;
+				stroke-miterlimit: 10;
+			}
+			.st60 {
+				fill: #bababa;
+			}
+			.st62 {
+				fill: #252525;
+			}
+			.st64 {
+				fill: none;
+			}
+			.st66 {
+				fill: #c05050;
+			}
+			.st67 {
+				opacity: 0.21;
+			}
+			.st69 {
+				fill: #a1a266;
+			}
+			.st70 {
+				fill: #f4e84c;
+			}
+			.st71 {
+				opacity: 0.2;
+				fill: #d5f4ff;
+			}
+			.st72 {
+				fill: silver;
+			}
+			.st73 {
+				fill: #888;
+			}
+			.st76 {
+				fill: none;
+				stroke: #8fff72;
+				stroke-linecap: round;
+				stroke-miterlimit: 10;
+			}
+			.st77 {
+				opacity: 0.38;
+				fill: #ffbe06;
+			}
+			.st79 {
+				opacity: 0.67;
+			}
+			.st80 {
+				fill: #211915;
+			}
+			.st81 {
+				fill: #f64e4e;
+			}
+			.st82 {
+				fill: #ff8d83;
+			}
+			.st83 {
+				fill: #fff154;
+			}
+			.st84 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #a78830;
+			}
+			.st86 {
+				fill: #959595;
+			}
+			.st87 {
+				fill: #d5f4ff;
+			}
+			.st88 {
+				fill: #272727;
+			}
+			.st89 {
+				fill: #434343;
+			}
+			.st90 {
+				fill: #7a999a;
+			}
+			.st91 {
+				fill: none;
+				stroke: #000;
+				stroke-width: 0.5;
+			}
+			.st92 {
+				fill: #a9a9a9;
+			}
+			.st94 {
+				fill: #363636;
+			}
+			.st99 {
+				fill: #1e5ed1;
+			}
+			.st101 {
+				fill: #c8c8c8;
+			}
+			.st103 {
+				fill: #d9d84c;
+			}
+			.st112 {
+				fill: #585858;
+				stroke: #000;
+				stroke-width: 5e-2;
+				stroke-miterlimit: 10;
+			}
+			.st113 {
+				fill: #fff;
+			}
+			.st113,
+			.st114 {
+				stroke: #000;
+				stroke-width: 5e-2;
+				stroke-miterlimit: 10;
+			}
+			.st116 {
+				fill: #202020;
+			}
+			.st117 {
+				fill: #595347;
+			}
+			.st118 {
+				fill: #b59a35;
+			}
+			.st119 {
+				fill: #282828;
+			}
+			.st121 {
+				fill: #90792b;
+			}
+			.st463 {
+				fill: #ffc200;
+			}
+			.st464 {
+				opacity: 0.38;
+				fill: #4781ff;
+			}
+			.st465 {
+				fill: #5a4c3e;
+			}
+			.st468 {
+				fill: #27a046;
+			}
+			.st469 {
+				fill: #6d5f47;
+			}
+			.st470,
+			.st471 {
+				fill: none;
+				stroke: #000;
+				stroke-width: 0.1;
+				stroke-miterlimit: 10;
+			}
+			.st471 {
+				stroke: #fcfeff;
+			}
+			.st472 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+			}
+			.st473 {
+				fill: #625124;
+			}
+			.st474 {
+				fill: #c77474;
+			}
+			.st476 {
+				fill: #7985db;
+			}
+			.st477 {
+				fill: #3d3d3d;
+			}
+			.st478 {
+				fill: #b9b9b9;
+			}
+			.st480 {
+				fill: #f2f2f2;
+			}
+			.st483 {
+				fill: #27411b;
+			}
+			.st484 {
+				fill: #751c1a;
+			}
+			.st485 {
+				opacity: 0.75;
+			}
+			.st488 {
+				fill: #cea83c;
+			}
+			.st489 {
+				fill: #c9b382;
+			}
+			.st490 {
+				fill: #a18c64;
+			}
+			.st491 {
+				fill: #afde92;
+			}
+			.st492 {
+				fill: #81a26a;
+			}
+			.st493 {
+				fill: #806f52;
+			}
+			.st494 {
+				fill: #a48f69;
+			}
+			.st495 {
+				fill: #4e4434;
+			}
+			.st496 {
+				fill: none;
+				stroke: #4e4434;
+				stroke-miterlimit: 10;
+			}
+			.st501 {
+				opacity: 0.2;
+			}
+			.st501,
+			.st502,
+			.st505 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #d5f4ff;
+			}
+			.st505 {
+				fill: #e0bc3f;
+			}
+			.st511 {
+				fill: #ede8e1;
+			}
+			.st512 {
+				fill: #393939;
+			}
+			.st514 {
+				fill: #e8e4cc;
+			}
+			.st516 {
+				fill: #757575;
+			}
+			.st517 {
+				fill: #c2c2c2;
+			}
+			.st519 {
+				fill: #811212;
+			}
+			.st520 {
+				fill: #601010;
+			}
+			.st521 {
+				fill: #cb6a6a;
+			}
+			.st523 {
+				fill: #c07d5d;
+			}
+			.st524 {
+				fill: #d0ccc3;
+			}
+			.st526 {
+				clip-path: url(#XMLID_4_);
+				fill: #453528;
+			}
+			.st527 {
+				fill: #9e6245;
+			}
+			.st528 {
+				clip-path: url(#XMLID_5_);
+				fill: #3a281e;
+			}
+			.st530 {
+				fill: #44362e;
+			}
+			.st531 {
+				fill: #382416;
+			}
+			.st533 {
+				fill: #2d323f;
+			}
+			.st537 {
+				fill: #a6a6a6;
+			}
+			.st538 {
+				fill: #ededed;
+			}
+			.st541 {
+				fill: #8a9197;
+			}
+			.st543 {
+				fill: #4f1515;
+			}
+			.st546,
+			.st547 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #811212;
+			}
+			.st547 {
+				fill: #5e1111;
+			}
+			.st548 {
+				fill: #c17b00;
+			}
+			.st551 {
+				fill: #415078;
+			}
+			.st553 {
+				fill: #a8a65f;
 			}
 		}
 	}
@@ -308,7 +687,6 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-
 
 		.script-modal {
 			.st0 {
@@ -777,4 +1155,10 @@
 			}
 		}
 	}
+}
+.hidden {
+	width: 0;
+	height: 0;
+	position: absolute;
+	font-size: 0;
 }

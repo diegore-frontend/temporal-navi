@@ -502,53 +502,434 @@ svg {
   position: relative;
   overflow: hidden; }
 
-.ap-stands-svg #game-selection .st0 {
-  fill: #5f0015; }
+.ap-stands-svg .dinamic-rack .st0 {
+  fill: #101030; }
 
-.ap-stands-svg #game-selection .st1 {
-  fill: #42210b; }
+.ap-stands-svg .dinamic-rack .st7 {
+  opacity: 0.48; }
 
-.ap-stands-svg #game-selection .st2 {
-  fill: #603813; }
+.ap-stands-svg .dinamic-rack .st8 {
+  fill: #292665; }
 
-.ap-stands-svg #game-selection .st3 {
-  fill: #ffff00; }
+.ap-stands-svg .dinamic-rack .st9 {
+  fill: #202051; }
 
-.ap-stands-svg #game-selection .st4 {
-  fill: #ffffff; }
+.ap-stands-svg .dinamic-rack .st17 {
+  opacity: 0.89; }
 
-.ap-stands-svg #game-selection .st5 {
-  fill: #00a99d; }
+.ap-stands-svg .dinamic-rack .st18 {
+  fill: #1b1b1b; }
 
-.ap-stands-svg #game-selection .st6 {
-  fill: #0000ff; }
+.ap-stands-svg .dinamic-rack .st19 {
+  opacity: 0.34; }
 
-.ap-stands-svg #game-selection .st7 {
-  fill: #8cc63f; }
+.ap-stands-svg .dinamic-rack .st20 {
+  fill: #fff; }
 
-.ap-stands-svg #game-selection .st8 {
-  fill: #ff7bac; }
+.ap-stands-svg .dinamic-rack .st25 {
+  opacity: 0.63;
+  fill: #211915; }
 
-.ap-stands-svg #game-selection .st9 {
-  fill: #22b573; }
+.ap-stands-svg .dinamic-rack .st26 {
+  opacity: 0.39; }
 
-.ap-stands-svg #game-selection .st10 {
-  fill: #ff3f1f; }
+.ap-stands-svg .dinamic-rack .st30 {
+  fill: #bc9e6c; }
 
-.ap-stands-svg #game-selection .st11 {
-  fill: #00dfdb; }
+.ap-stands-svg .dinamic-rack .st31 {
+  fill: #af8241; }
 
-.ap-stands-svg #game-selection .st12 {
-  fill: #492a0f; }
+.ap-stands-svg .dinamic-rack .st32 {
+  fill: #2a9b47; }
 
-.ap-stands-svg #game-selection .st13 {
-  fill: #39b54a; }
+.ap-stands-svg .dinamic-rack .st33 {
+  fill: #4fc974; }
 
-.ap-stands-svg #game-selection .st14 {
-  fill: #006837; }
+.ap-stands-svg .dinamic-rack .st34 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.25;
+  stroke-miterlimit: 10; }
 
-.ap-stands-svg #game-selection .st15 {
-  fill: #c1272d; }
+.ap-stands-svg .dinamic-rack .st35 {
+  fill: #9dffbe; }
+
+.ap-stands-svg .dinamic-rack .st36 {
+  opacity: 0.21;
+  fill: #211915; }
+
+.ap-stands-svg .dinamic-rack .st37 {
+  fill: #2262d3; }
+
+.ap-stands-svg .dinamic-rack .st38 {
+  fill: #4781ff; }
+
+.ap-stands-svg .dinamic-rack .st39 {
+  fill: none;
+  stroke: #ffc200;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+.ap-stands-svg .dinamic-rack .st40,
+.ap-stands-svg .dinamic-rack .st41 {
+  fill: #ff4e4e; }
+
+.ap-stands-svg .dinamic-rack .st41 {
+  opacity: 0.49; }
+
+.ap-stands-svg .dinamic-rack .st42 {
+  opacity: 0.28;
+  fill: #fff; }
+
+.ap-stands-svg .dinamic-rack .st43 {
+  fill: #ffbe06; }
+
+.ap-stands-svg .dinamic-rack .st44 {
+  fill: #5a93f9; }
+
+.ap-stands-svg .dinamic-rack .st45 {
+  fill: #997a4d; }
+
+.ap-stands-svg .dinamic-rack .st46 {
+  fill: #dbb783; }
+
+.ap-stands-svg .dinamic-rack .st48 {
+  fill: #9a999e; }
+
+.ap-stands-svg .dinamic-rack .st49 {
+  fill: #1f1b20; }
+
+.ap-stands-svg .dinamic-rack .st50 {
+  fill: #ccb087; }
+
+.ap-stands-svg .dinamic-rack .st51 {
+  opacity: 0.38;
+  fill: #997a4d; }
+
+.ap-stands-svg .dinamic-rack .st52 {
+  opacity: 0.1;
+  fill: #211915; }
+
+.ap-stands-svg .dinamic-rack .st54 {
+  opacity: 0.15; }
+
+.ap-stands-svg .dinamic-rack .st55 {
+  opacity: 0.67;
+  fill: #211915; }
+
+.ap-stands-svg .dinamic-rack .st59,
+.ap-stands-svg .dinamic-rack .st60 {
+  fill: #616161;
+  stroke: #464646;
+  stroke-width: 0.25;
+  stroke-miterlimit: 10; }
+
+.ap-stands-svg .dinamic-rack .st60 {
+  fill: #bababa; }
+
+.ap-stands-svg .dinamic-rack .st62 {
+  fill: #252525; }
+
+.ap-stands-svg .dinamic-rack .st64 {
+  fill: none; }
+
+.ap-stands-svg .dinamic-rack .st66 {
+  fill: #c05050; }
+
+.ap-stands-svg .dinamic-rack .st67 {
+  opacity: 0.21; }
+
+.ap-stands-svg .dinamic-rack .st69 {
+  fill: #a1a266; }
+
+.ap-stands-svg .dinamic-rack .st70 {
+  fill: #f4e84c; }
+
+.ap-stands-svg .dinamic-rack .st71 {
+  opacity: 0.2;
+  fill: #d5f4ff; }
+
+.ap-stands-svg .dinamic-rack .st72 {
+  fill: silver; }
+
+.ap-stands-svg .dinamic-rack .st73 {
+  fill: #888; }
+
+.ap-stands-svg .dinamic-rack .st76 {
+  fill: none;
+  stroke: #8fff72;
+  stroke-linecap: round;
+  stroke-miterlimit: 10; }
+
+.ap-stands-svg .dinamic-rack .st77 {
+  opacity: 0.38;
+  fill: #ffbe06; }
+
+.ap-stands-svg .dinamic-rack .st79 {
+  opacity: 0.67; }
+
+.ap-stands-svg .dinamic-rack .st80 {
+  fill: #211915; }
+
+.ap-stands-svg .dinamic-rack .st81 {
+  fill: #f64e4e; }
+
+.ap-stands-svg .dinamic-rack .st82 {
+  fill: #ff8d83; }
+
+.ap-stands-svg .dinamic-rack .st83 {
+  fill: #fff154; }
+
+.ap-stands-svg .dinamic-rack .st84 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #a78830; }
+
+.ap-stands-svg .dinamic-rack .st86 {
+  fill: #959595; }
+
+.ap-stands-svg .dinamic-rack .st87 {
+  fill: #d5f4ff; }
+
+.ap-stands-svg .dinamic-rack .st88 {
+  fill: #272727; }
+
+.ap-stands-svg .dinamic-rack .st89 {
+  fill: #434343; }
+
+.ap-stands-svg .dinamic-rack .st90 {
+  fill: #7a999a; }
+
+.ap-stands-svg .dinamic-rack .st91 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.5; }
+
+.ap-stands-svg .dinamic-rack .st92 {
+  fill: #a9a9a9; }
+
+.ap-stands-svg .dinamic-rack .st94 {
+  fill: #363636; }
+
+.ap-stands-svg .dinamic-rack .st99 {
+  fill: #1e5ed1; }
+
+.ap-stands-svg .dinamic-rack .st101 {
+  fill: #c8c8c8; }
+
+.ap-stands-svg .dinamic-rack .st103 {
+  fill: #d9d84c; }
+
+.ap-stands-svg .dinamic-rack .st112 {
+  fill: #585858;
+  stroke: #000;
+  stroke-width: 5e-2;
+  stroke-miterlimit: 10; }
+
+.ap-stands-svg .dinamic-rack .st113 {
+  fill: #fff; }
+
+.ap-stands-svg .dinamic-rack .st113,
+.ap-stands-svg .dinamic-rack .st114 {
+  stroke: #000;
+  stroke-width: 5e-2;
+  stroke-miterlimit: 10; }
+
+.ap-stands-svg .dinamic-rack .st116 {
+  fill: #202020; }
+
+.ap-stands-svg .dinamic-rack .st117 {
+  fill: #595347; }
+
+.ap-stands-svg .dinamic-rack .st118 {
+  fill: #b59a35; }
+
+.ap-stands-svg .dinamic-rack .st119 {
+  fill: #282828; }
+
+.ap-stands-svg .dinamic-rack .st121 {
+  fill: #90792b; }
+
+.ap-stands-svg .dinamic-rack .st463 {
+  fill: #ffc200; }
+
+.ap-stands-svg .dinamic-rack .st464 {
+  opacity: 0.38;
+  fill: #4781ff; }
+
+.ap-stands-svg .dinamic-rack .st465 {
+  fill: #5a4c3e; }
+
+.ap-stands-svg .dinamic-rack .st468 {
+  fill: #27a046; }
+
+.ap-stands-svg .dinamic-rack .st469 {
+  fill: #6d5f47; }
+
+.ap-stands-svg .dinamic-rack .st470,
+.ap-stands-svg .dinamic-rack .st471 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1;
+  stroke-miterlimit: 10; }
+
+.ap-stands-svg .dinamic-rack .st471 {
+  stroke: #fcfeff; }
+
+.ap-stands-svg .dinamic-rack .st472 {
+  fill-rule: evenodd;
+  clip-rule: evenodd; }
+
+.ap-stands-svg .dinamic-rack .st473 {
+  fill: #625124; }
+
+.ap-stands-svg .dinamic-rack .st474 {
+  fill: #c77474; }
+
+.ap-stands-svg .dinamic-rack .st476 {
+  fill: #7985db; }
+
+.ap-stands-svg .dinamic-rack .st477 {
+  fill: #3d3d3d; }
+
+.ap-stands-svg .dinamic-rack .st478 {
+  fill: #b9b9b9; }
+
+.ap-stands-svg .dinamic-rack .st480 {
+  fill: #f2f2f2; }
+
+.ap-stands-svg .dinamic-rack .st483 {
+  fill: #27411b; }
+
+.ap-stands-svg .dinamic-rack .st484 {
+  fill: #751c1a; }
+
+.ap-stands-svg .dinamic-rack .st485 {
+  opacity: 0.75; }
+
+.ap-stands-svg .dinamic-rack .st488 {
+  fill: #cea83c; }
+
+.ap-stands-svg .dinamic-rack .st489 {
+  fill: #c9b382; }
+
+.ap-stands-svg .dinamic-rack .st490 {
+  fill: #a18c64; }
+
+.ap-stands-svg .dinamic-rack .st491 {
+  fill: #afde92; }
+
+.ap-stands-svg .dinamic-rack .st492 {
+  fill: #81a26a; }
+
+.ap-stands-svg .dinamic-rack .st493 {
+  fill: #806f52; }
+
+.ap-stands-svg .dinamic-rack .st494 {
+  fill: #a48f69; }
+
+.ap-stands-svg .dinamic-rack .st495 {
+  fill: #4e4434; }
+
+.ap-stands-svg .dinamic-rack .st496 {
+  fill: none;
+  stroke: #4e4434;
+  stroke-miterlimit: 10; }
+
+.ap-stands-svg .dinamic-rack .st501 {
+  opacity: 0.2; }
+
+.ap-stands-svg .dinamic-rack .st501,
+.ap-stands-svg .dinamic-rack .st502,
+.ap-stands-svg .dinamic-rack .st505 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #d5f4ff; }
+
+.ap-stands-svg .dinamic-rack .st505 {
+  fill: #e0bc3f; }
+
+.ap-stands-svg .dinamic-rack .st511 {
+  fill: #ede8e1; }
+
+.ap-stands-svg .dinamic-rack .st512 {
+  fill: #393939; }
+
+.ap-stands-svg .dinamic-rack .st514 {
+  fill: #e8e4cc; }
+
+.ap-stands-svg .dinamic-rack .st516 {
+  fill: #757575; }
+
+.ap-stands-svg .dinamic-rack .st517 {
+  fill: #c2c2c2; }
+
+.ap-stands-svg .dinamic-rack .st519 {
+  fill: #811212; }
+
+.ap-stands-svg .dinamic-rack .st520 {
+  fill: #601010; }
+
+.ap-stands-svg .dinamic-rack .st521 {
+  fill: #cb6a6a; }
+
+.ap-stands-svg .dinamic-rack .st523 {
+  fill: #c07d5d; }
+
+.ap-stands-svg .dinamic-rack .st524 {
+  fill: #d0ccc3; }
+
+.ap-stands-svg .dinamic-rack .st526 {
+  -webkit-clip-path: url(#XMLID_4_);
+          clip-path: url(#XMLID_4_);
+  fill: #453528; }
+
+.ap-stands-svg .dinamic-rack .st527 {
+  fill: #9e6245; }
+
+.ap-stands-svg .dinamic-rack .st528 {
+  -webkit-clip-path: url(#XMLID_5_);
+          clip-path: url(#XMLID_5_);
+  fill: #3a281e; }
+
+.ap-stands-svg .dinamic-rack .st530 {
+  fill: #44362e; }
+
+.ap-stands-svg .dinamic-rack .st531 {
+  fill: #382416; }
+
+.ap-stands-svg .dinamic-rack .st533 {
+  fill: #2d323f; }
+
+.ap-stands-svg .dinamic-rack .st537 {
+  fill: #a6a6a6; }
+
+.ap-stands-svg .dinamic-rack .st538 {
+  fill: #ededed; }
+
+.ap-stands-svg .dinamic-rack .st541 {
+  fill: #8a9197; }
+
+.ap-stands-svg .dinamic-rack .st543 {
+  fill: #4f1515; }
+
+.ap-stands-svg .dinamic-rack .st546,
+.ap-stands-svg .dinamic-rack .st547 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #811212; }
+
+.ap-stands-svg .dinamic-rack .st547 {
+  fill: #5e1111; }
+
+.ap-stands-svg .dinamic-rack .st548 {
+  fill: #c17b00; }
+
+.ap-stands-svg .dinamic-rack .st551 {
+  fill: #415078; }
+
+.ap-stands-svg .dinamic-rack .st553 {
+  fill: #a8a65f; }
 
 .ap-mod-clack {
   position: absolute;
@@ -991,6 +1372,12 @@ svg {
   .ap--is-game .ap-modal--game-loader .ap-load-bar-progress {
     width: 51%; }
 
+.hidden {
+  width: 0;
+  height: 0;
+  position: absolute;
+  font-size: 0; }
+
 .ap-btn {
   background: -webkit-gradient(linear, right top, left top, from(#f85155), to(#ff6763));
   background: linear-gradient(to left, #f85155, #ff6763);
@@ -1010,36 +1397,37 @@ svg {
   box-shadow: 0em 0.2em #44171d;
   letter-spacing: 1px; }
 
-.ap-footer {
-  background-color: #2a2a2a; }
-  .ap-footer .ap-ft-area {
-    position: relative;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-            align-items: center;
-    padding: 1.6em 1em; }
-    @media only screen and (max-width: 760px) {
-      .ap-footer .ap-ft-area {
-        font-size: 0.68em; } }
-    @media only screen and (min-width: 760px) {
-      .ap-footer .ap-ft-area {
-        justify-content: space-around; } }
-  .ap-footer .ap-ft-logo {
-    max-width: 8em;
-    width: 100%;
-    display: block;
-    height: 2em; }
-    .ap-footer .ap-ft-logo .icon {
-      fill: #fff; }
-  .ap-footer .ap-txt--link {
-    color: #707070;
-    text-decoration: underline; }
+.ap-footer .ap-ft-area {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 1.6em 1em;
+  z-index: 4; }
+  @media only screen and (max-width: 760px) {
+    .ap-footer .ap-ft-area {
+      font-size: 0.68em; } }
+  @media only screen and (min-width: 760px) {
+    .ap-footer .ap-ft-area {
+      justify-content: space-around; } }
+
+.ap-footer .ap-ft-logo {
+  max-width: 8em;
+  width: 100%;
+  display: block;
+  height: 2em; }
+  .ap-footer .ap-ft-logo .icon {
+    fill: #fff; }
+
+.ap-footer .ap-txt--link {
+  color: #707070;
+  text-decoration: underline; }
 
 .ap-overlay {
   background-color: black;
@@ -1241,10 +1629,6 @@ svg {
     max-width: 24em;
     width: 100%; }
 
-.ap-modal-script .ap-modal-flx {
-  position: relative;
-  z-index: 2; }
-
 .ap-modal-script .ap-tt {
   color: #2a2a2a;
   font-size: 1.8em; }
@@ -1267,6 +1651,8 @@ svg {
       padding-top: 0; } }
 
 .ap-modal-script .ap-modal-flx {
+  position: relative;
+  z-index: 2;
   -webkit-box-pack: start;
           justify-content: start; }
   @media only screen and (min-width: 1200px) {
@@ -1284,8 +1670,8 @@ svg {
 
 .ap-modal--instructions .ap-tt, .ap-modal--instructions .ap-ttt, .ap-modal--instructions .ap-txt, .ap-modal--instructions .ap-inst-img, .ap-modal--instructions .ap-play-btn {
   opacity: 0;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   -webkit-transform: translateY(-0.6em);
           transform: translateY(-0.6em); }
 
@@ -1294,9 +1680,11 @@ svg {
           transform-origin: left bottom;
   -webkit-transform: rotate(-50deg);
           transform: rotate(-50deg);
-  -webkit-transition: .20s ease-in-out;
-  transition: .20s ease-in-out; }
+  opacity: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
   .ap-modal--instructions .ap-mod-clack--open {
+    opacity: 1;
     -webkit-transform: none;
             transform: none; }
 
@@ -1309,35 +1697,35 @@ svg {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s; }
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s; }
 
 .ap-modal--instructions-open .ap-txt {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition-delay: .4s;
-          transition-delay: .4s; }
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s; }
   .ap-modal--instructions-open .ap-txt:nth-child(2) {
-    -webkit-transition-delay: .6s;
-            transition-delay: .6s; }
+    -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s; }
   .ap-modal--instructions-open .ap-txt:nth-child(3) {
-    -webkit-transition-delay: .7s;
-            transition-delay: .7s; }
+    -webkit-transition-delay: 0.7s;
+            transition-delay: 0.7s; }
 
 .ap-modal--instructions-open .ap-inst-img {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition-delay: .8s;
-          transition-delay: .8s; }
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s; }
 
 .ap-modal--instructions-open .ap-play-btn {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition-delay: .9s;
-          transition-delay: .9s; }
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s; }
 
 .ap-modal--holdon .ap-hold-info {
   color: #2a2a2a; }
@@ -1512,7 +1900,8 @@ svg {
   overflow: hidden; }
   .ap-op--intro {
     background-color: #00cf77;
-    position: fixed; }
+    position: fixed;
+    height: calc(100vh - 3.6em); }
     .ap-op--intro-done {
       position: relative; }
 
@@ -1580,14 +1969,31 @@ svg {
 
 .ap-game-menu {
   width: 100%;
-  position: relative;
-  height: calc(100vh - 3.5em); }
+  height: calc(100vh - 8.5em); }
+  @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-menu {
+      height: calc(100vh - 8.2em); } }
+  @media only screen and (min-width: 360px) and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-menu {
+      height: calc(100vh - 7em); } }
   @media only screen and (min-width: 760px) {
     .ap-game-menu {
-      height: calc(100vh - 6.4em); } }
-  @media only screen and (min-width: 760px) {
+      height: calc(100vh - 7em); } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 922px) and (orientation: portrait) {
+    .ap-game-menu {
+      height: calc(100vh - 9em); } }
+  @media only screen and (min-width: 1000px) {
+    .ap-game-menu {
+      height: calc(100vh - 7.2em); } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 666px) {
+    .ap-game-menu {
+      height: calc(100vh - 9.2em); } }
+  @media only screen and (min-width: 1025px) {
     .ap-game-menu {
       height: calc(100vh - 5.2em); } }
+  .ap-game-menu .ap-btn {
+    position: relative;
+    z-index: 3; }
   .ap-game-menu .ap-stands-svg {
     position: absolute;
     top: 0;
@@ -1595,6 +2001,8 @@ svg {
     bottom: 0;
     right: 0;
     overflow: hidden; }
+    .ap-game-menu .ap-stands-svg .dinamic-rack {
+      opacity: 0; }
   .ap-game-menu #game-selection {
     width: 30em;
     height: 12.4em;
@@ -1612,8 +2020,29 @@ svg {
   cursor: pointer; }
 
 .ap-game-stage {
-  height: calc(100vh - 3.5em); }
+  height: calc(100vh - 3.5em);
+  overflow: hidden;
+  position: relative;
+  z-index: 4; }
+  @media only screen and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-stage {
+      height: calc(100vh - 8.2em); } }
+  @media only screen and (min-width: 360px) and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-stage {
+      height: calc(100vh - 7em); } }
   @media only screen and (min-width: 760px) {
+    .ap-game-stage {
+      height: calc(100vh - 7em); } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 922px) and (orientation: portrait) {
+    .ap-game-stage {
+      height: calc(100vh - 9em); } }
+  @media only screen and (min-width: 1000px) {
+    .ap-game-stage {
+      height: calc(100vh - 7.2em); } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 666px) {
+    .ap-game-stage {
+      height: calc(100vh - 9.2em); } }
+  @media only screen and (min-width: 1025px) {
     .ap-game-stage {
       height: calc(100vh - 5.2em); } }
 
@@ -1627,14 +2056,86 @@ svg {
   -webkit-box-direction: normal;
           flex-direction: column; }
 
+.ap-game-bg {
+  background: url("../img/prueba-fondo.svg");
+  background-size: 116em auto;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden; }
+  .ap-game-bg:before {
+    background: radial-gradient(rgba(0, 0, 0, 0), #000);
+    opacity: 1;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
+  @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-bg {
+      background-size: 52em auto; } }
+  @media only screen and (min-width: 360px) and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-bg {
+      background-size: 66em auto; } }
+  @media only screen and (min-width: 1025px) {
+    .ap-game-bg {
+      background-size: cover; } }
+
+.ap-game-rack {
+  background: url("../img/img-empty-rack.svg") no-repeat;
+  background-position: center top;
+  position: absolute;
+  height: 56em;
+  width: 100%;
+  z-index: 1;
+  top: 50%;
+  margin-top: -32.4em; }
+  @media only screen and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-rack {
+      background-size: 25.4em auto; } }
+  @media only screen and (min-width: 340px) {
+    .ap-game-rack {
+      background-size: 26em auto; } }
+  @media only screen and (min-width: 760px) {
+    .ap-game-rack {
+      margin-top: -32.9em;
+      font-size: 1.33em; } }
+
+.ap-game-stant {
+  background: url("../img/img-empty-stant.svg") no-repeat;
+  background-size: 34em auto;
+  background-position: center top;
+  position: absolute;
+  height: 56em;
+  width: 100%;
+  z-index: 1;
+  top: 50%;
+  margin-top: -27.4em; }
+  @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-stant {
+      background-size: 38em auto;
+      height: 57em;
+      margin-top: -28.5em; } }
+  @media only screen and (min-width: 360px) and (max-height: 568px) and (orientation: portrait) {
+    .ap-game-stant {
+      margin-top: -31.1em; } }
+  @media only screen and (min-width: 760px) {
+    .ap-game-stant {
+      margin-top: -32.9em;
+      font-size: 1.4em; } }
+
 .ap-counter {
   text-align: center;
   padding: 1em; }
   .ap-counter .ap-txt {
     font-family: "chewy", sans-serif;
-    font-size: 1.6em; }
+    font-size: 1em;
+    color: #fff; }
     .ap-counter .ap-txt--timer {
-      font-size: 2em; }
+      font-size: 1.8em; }
 
 .jqPuzzle {
   padding: 5px; }
@@ -1655,12 +2156,10 @@ svg {
 
 /* a single puzzle piece */
 .jqPuzzle .jqp-piece {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-size: 36px; }
-
-.jqPuzzle .jqp-piece:hover {
-  border-style: dashed; }
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 0.5em; }
+  .jqPuzzle .jqp-piece:hover {
+    border-style: dashed; }
 
 .jqPuzzle.jqp-solved .jqp-piece:hover {
   border-style: solid; }
@@ -1740,6 +2239,12 @@ svg {
   background-color: #c2ffaf;
   color: #444444; }
 
+@media only screen and (min-width: 760px) {
+  .ap-puzzle .ap-counter {
+    position: absolute;
+    top: 0;
+    width: 100%; } }
+
 .ap-puzzle-cont {
   position: relative;
   width: 18.5em;
@@ -1771,13 +2276,19 @@ svg {
   .ap-puzzle-img div:nth-child(2) {
     display: none; }
 
+@media only screen and (min-width: 760px) {
+  .ap-game-trivia .ap-counter {
+    position: absolute;
+    top: 0;
+    width: 100%; } }
+
 .ap-trivia-controls {
   max-width: 22em;
   margin: 0 auto;
   position: relative; }
   @media only screen and (min-width: 760px) {
     .ap-trivia-controls {
-      font-size: 1.2em; } }
+      font-size: 1.18em; } }
   .ap-trivia-controls--answers {
     margin: auto;
     max-width: 16em;
@@ -1788,7 +2299,7 @@ svg {
             transform: translate(-1.1em, 1em); }
     @media only screen and (max-width: 350px) {
       .ap-trivia-controls--answers {
-        font-size: .88em; } }
+        font-size: 0.88em; } }
     .ap-trivia-controls--answers ul {
       display: -webkit-box;
       display: flex;
@@ -1845,9 +2356,22 @@ svg {
 .ap-f-error {
   width: 90%;
   margin: auto; }
+  @media only screen and (min-width: 760px) {
+    .ap-f-error {
+      max-width: 26em;
+      width: 100%; } }
   .ap-f-error--imagen {
-    width: 100%;
-    max-width: 90%; }
+    width: 100%; }
+    @media only screen and (min-width: 760px) {
+      .ap-f-error--imagen {
+        -webkit-transform: translateY(4em);
+                transform: translateY(4em); } }
+  @media only screen and (min-width: 760px) {
+    .ap-f-error .ap-counter {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0; } }
 
 .ap--is-intro {
   overflow: hidden; }

@@ -3,9 +3,26 @@
 		width: 90%;
 		margin: auto;
 
+		@include above(760px) {
+			max-width: 26em;
+			width: 100%;
+		}
+
 		&--imagen {
 			width: 100%;
-			max-width: 90%;
+
+			@include above(760px) {
+				transform: translateY(4em);
+			}
+		}
+
+		.ap-counter {
+			@include above(760px) {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				left: 0;
+			}
 		}
 	}
 }
