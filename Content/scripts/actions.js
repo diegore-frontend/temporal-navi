@@ -2,7 +2,11 @@ var $wW = $(window).width(),
 	$modLink = $(".ap-mod"),
 	$mClose = $(".ap-modal-close"),
 	$mCloseBtn = $(".ap-mod-close"),
+	$host = window.location.hostname,
+	$string = "http://"+ $host +":3000/html/game.html",
+	$pine = $('.ap-pine'),
 	$siteData = "",
+	$randomStant = Math.floor(Math.random() * 7) + 1,
 	$id = "",
 	$ea = "",
 	$termsData;
@@ -212,25 +216,23 @@ function useReturnData(data) {
 function gamifiying(data) {
 	var $globalDay = $day,
 		$siteData = $(data),
+		$giftArr = [],
+		$currentDay = $day,
+		$dayfrom = "",
 		$canPlay = $error;
 
+	pineStatus();
+	standsPerDay();
 	dayEqualstoGame();
 
-	var $DAYPINEANIMATION = "runAnimationDay" + $day + "";
+	var $DAYPINEANIMATION = "runAnimationDay";
 	var $RUNSETTINGSFORGAMEDAY = "runGame" + $gameSts + "";
 
-	console.log(
-		"Current game day is:" + $globalDay + ".",
-		" Session is " + $canPlay + " for play."
-	);
-
-	var $animationDays = {
-		runAnimationDay1: function() {
-			console.log("Pine Animation for day One");
+	// Aquí va la animación del pino cuando ganas el pin del día
+	var $animationWinDays = {
+		runAnimationDay: function() {
+			winSequence()
 		},
-		runAnimationDay2: function() {
-			console.log("Pine Animation for day two");
-		}
 	};
 
 	var $gameSttings = {
@@ -293,8 +295,41 @@ function gamifiying(data) {
 		}
 	}
 
-	$animationDays[$DAYPINEANIMATION]();
+	function standsPerDay() {
+		if ($day > 1) {
+			$('.ap-stands-bg').addClass('ap-stands-bg--day-'+$randomStant+'');
+		} else {
+			$('.ap-stands-bg').addClass('ap-stands-bg--day-'+$day+'');
+		}
+	}
+
+	function winSequence() {
+		if($win === true) {
+			switchPineGifts();
+		}
+	}
+
+	// Es estado del pino segun los días
+	function pineStatus() {
+		$giftArr = $('.ap-pine-gift');
+		$dayfrom = $($giftArr.slice(0, $currentDay-1));
+		$dayfrom.removeClass('ap-pine-gift-hide');
+	}
+
+	function switchPineGifts() {
+
+		$dayfrom = $($giftArr.slice(0, $currentDay+1));
+
+		if ($('.ap-game-end').length) {
+			$dayfrom.addClass('ap-pine-gift--wined');
+			var $animationPrice = $('.ap-pine-gift--wined');
+			// Aquí se ejecuta la animación del icono ganador
+			animateGift($animationPrice);
+		}
+	}
+
 	$gameSttings[$RUNSETTINGSFORGAMEDAY]();
+	$animationWinDays[$DAYPINEANIMATION]();
 }
 
 function fillData(data) {
@@ -361,7 +396,7 @@ function gameType() {
 function goToGame() {
 	var $game = $gameSts.toLowerCase();
 
-	window.location.replace("http://localhost:3000/html/game-" + $game + ".html");
+	window.location.replace("http://"+ $host +":3000/html/game-" + $game + ".html");
 }
 
 function loadOut() {
@@ -383,6 +418,12 @@ function animateScript() {
 	$clack.toggleClass("ap-mod-clack--open");
 	$el.toggleClass("ap-modal--instructions-open");
 }
+
+function animateGift($animationPrice) {
+	var $el = $animationPrice;
+	console.log($el)
+}
+
 
 $(function() {
 	isGame();
@@ -407,7 +448,7 @@ $(function() {
 		$(".ap-scroll").perfectScrollbar();
 	}
 
-	var $pene = $(window).height();
-
-	console.log($pene);
+	$.each( [ "a", "b", "c" ], function( i, l ){
+	  console.log("Index #" + i + ": " + l );
+	});
 });
